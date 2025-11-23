@@ -8,7 +8,7 @@ baseurl: ""
 
 # Minimal Mistakes 설정
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default"   # 나중에 핑크로 커스터마이징
+minimal_mistakes_skin: "zac"   # 나중에 핑크로 커스터마이징
 
 markdown: kramdown
 

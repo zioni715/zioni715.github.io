@@ -1,0 +1,23 @@
+// ZAC strawberry-milk skin 🍓
+
+$background-color: #fff7fb !default;         // 전체 배경 (연한 분홍)
+$text-color: #333333 !default;               // 기본 글자
+$muted-text-color: #666666 !default;         // 서브 텍스트
+
+$primary-color: #ff6ea7 !default;            // 메인 포인트 (딸기)
+$accent-color:  #ffc1dd !default;            // 보조 포인트 (연분홍)
+
+$link-color: $primary-color !default;        // 링크 색
+$link-color-hover: darken($primary-color, 8%) !default;
+
+$border-color: #ffd6ea !default;             // 박스/테두리
+$code-background-color: #fff0f6 !default;    // 코드 블록 배경
+
+$masthead-background: #fff0f7 !default;      // 상단 바 배경
+$masthead-text-color: #333333 !default;
+$masthead-link-color: #333333 !default;
+$masthead-link-color-hover: $primary-color !default;
+
+$footer-background-color: #ffeaf4 !default;  // 하단 배경
+$footer-text-color: #555555 !default;
+$footer-link-color: $primary-color !default;
