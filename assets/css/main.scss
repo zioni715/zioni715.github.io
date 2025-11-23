@@ -27,3 +27,41 @@ body {
   font-size: 1.9rem;
 }
 */
+
+/* === Custom social icons (Velog / Naver Blog / Threads) === */
+
+/* 1) 기존 Font Awesome 아이콘은 숨기기 */
+.author__urls a[href*="velog.io"] i,
+.author__urls a[href*="blog.naver.com"] i,
+.author__urls a[href*="threads.net"] i {
+  display: none;
+}
+
+/* 2) label 앞에 커스텀 로고 붙이기 */
+.author__urls a[href*="velog.io"] .label::before,
+.author__urls a[href*="blog.naver.com"] .label::before,
+.author__urls a[href*="threads.net"] .label::before {
+  content: "";
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.35em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: text-bottom;
+}
+
+/* 3) 각각 이미지 경로 지정 */
+.author__urls a[href*="velog.io"] .label::before {
+  background-image: url("/assets/icons/green favicon.png");
+}
+
+.author__urls a[href*="blog.naver.com"] .label::before {
+  background-image: url("/assets/icons/naver_blog.png");
+}
+
+.author__urls a[href*="threads.net"] .label::before {
+  background-image: url("/assets/icons/thread.png");
+}
+
