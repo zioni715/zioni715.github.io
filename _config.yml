@@ -1,0 +1,36 @@
+title: "ZAC(Zioni Architecture & Civil)"
+name: "zioni715"
+description: "ZAC · Zioni Architecture & Civil – portfolio, projects, research notes, and study log."
+locale: "ko-KR"
+
+url: "https://zioni715.github.io"
+baseurl: ""   
+
+# Minimal Mistakes 설정
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default"   # 나중에 핑크로 커스터마이징
+
+markdown: kramdown
+
+plugins:
+  - jekyll-include-cache
+
+# 프로필 정보 (사이드바 + SNS 아이콘)
+author:
+  name   : "SON JIWON"
+  avatar : "/assets/images/zioni_pic.png"  
+  bio    : "Researching smart infrastructure at the intersection of architecture and civil engineering."
+  location: "Republic of Korea"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/zioni715"
+    - label: "Velog"
+      icon: "fas fa-pen-nib"
+      url: "https://velog.io/@hamzzi_lover"
+    - label: "Instagram"
+      icon: "fab fa-instagram"
+      url: "https://instagram.com/mynameisnu.__.ll"
+    - label: "Gmail"
+      icon: "fab fa-google"
+      url: "mailto:jennysiw715557@gmail.com"
