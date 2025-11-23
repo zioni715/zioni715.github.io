@@ -1,0 +1,13 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Education"
+    url: "/education/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Skills"
+    url: "/skills/"
+  - title: "Researchs"
+    url: "/researchs/"
+  - title: "Study"
+    url: "/study/"
