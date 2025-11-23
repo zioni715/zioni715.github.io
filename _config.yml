@@ -34,7 +34,7 @@ author:
     - label: "Gmail"
       icon: "fab fa-google"
       url: "mailto:jennysiw715557@gmail.com"
-          - label: "Naver Blog"
+    - label: "Naver Blog"
       icon: "fas fa-blog"
       url: "https://blog.naver.com/wowgiroong_715"
     - label: "Threads"
