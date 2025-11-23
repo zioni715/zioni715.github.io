@@ -2,236 +2,296 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>zioni715's page 🍓🥛</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    :root {
-      /* 딸기우유 팔레트 */
-      --strawberry-milk-bg: #ffeef5;   /* 전체 배경: 연한 딸기우유 */
-      --strawberry-milk-card: #fff7fb; /* 카드 배경: 아주 연한 핑크 */
-      --strawberry-main: #ff8fb5;      /* 포인트 컬러 */
-      --strawberry-deep: #ff4b8a;      /* 진한 포인트 */
-      --text-main: #333333;            /* 기본 글자색 */
-      --text-sub: #777777;             /* 서브 텍스트 */
-    }
+  <title>zioni · Portfolio</title>
+  <meta name="description" content="zioni의 포트폴리오 · 학력, 프로젝트, 능력, 공부 기록" />
 
-    * {
-      box-sizing: border-box;
-    }
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(circle at top left, #ffd6e7 0, var(--strawberry-milk-bg) 45%, #ffffff 100%);
-      color: var(--text-main);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+  <!-- Font Awesome (SNS 아이콘용) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-    .card {
-      background: var(--strawberry-milk-card);
-      padding: 32px 40px;
-      border-radius: 24px;
-      box-shadow: 0 18px 40px rgba(255, 143, 181, 0.25);
-      max-width: 720px;
-      width: min(90%, 720px);
-      border: 1px solid rgba(255, 143, 181, 0.25);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::before {
-      /* 귀엽게 위에 핑크 포인트 원 */
-      content: "";
-      position: absolute;
-      width: 160px;
-      height: 160px;
-      background: rgba(255, 143, 181, 0.25);
-      border-radius: 50%;
-      top: -60px;
-      right: -40px;
-      filter: blur(2px);
-      pointer-events: none;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 12px;
-      border-radius: 999px;
-      background: #ffe0ee;
-      color: var(--strawberry-deep);
-      font-size: 12px;
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
-
-    .tag-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--strawberry-deep);
-    }
-
-    h1 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 28px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    h1 span.emoji {
-      font-size: 30px;
-    }
-
-    p.lead {
-      margin-top: 0;
-      margin-bottom: 18px;
-      color: var(--text-sub);
-      line-height: 1.6;
-    }
-
-    h2 {
-      margin-top: 24px;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    h2 span.icon {
-      font-size: 20px;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-top: 8px;
-      margin-bottom: 12px;
-    }
-
-    li {
-      margin-bottom: 4px;
-    }
-
-    a {
-      color: var(--strawberry-deep);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .pill-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 143, 181, 0.5);
-      background: rgba(255, 255, 255, 0.7);
-      font-size: 13px;
-    }
-
-    .pill span.emoji {
-      font-size: 16px;
-    }
-
-    .footer {
-      margin-top: 24px;
-      font-size: 12px;
-      color: var(--text-sub);
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .footer span.highlight {
-      color: var(--strawberry-main);
-      font-weight: 600;
-    }
-
-    @media (max-width: 600px) {
-      .card {
-        padding: 24px 20px;
-        border-radius: 18px;
-      }
-      h1 {
-        font-size: 22px;
-      }
-      h2 {
-        font-size: 18px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <div class="tag">
-      <span class="tag-dot"></span>
-      <span>strawberry milk themed · github.io</span>
+  <div class="background"></div>
+
+  <main class="page">
+    <div class="card" id="top">
+      <!-- 상단 헤더 / 인사 -->
+      <header class="hero">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          strawberry milk themed · github.io
+        </div>
+        <h1>안녕하세요, 저는 <span class="highlight">zioni</span>입니다 🍓</h1>
+        <p class="hero-sub">
+          데이터·코딩·건설·디지털트윈을 연결해서,
+          <br class="br-mobile" />현실 문제를 푸는 걸 좋아하는 사람입니다.
+        </p>
+      </header>
+
+      <!-- 섹션 네비게이션 (교수님 홈페이지처럼 탭 느낌) -->
+      <nav class="section-nav">
+        <a href="#education">학력</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#skills">능력</a>
+        <a href="#notes">공부 기록</a>
+        <a href="#now">지금 & 목표</a>
+        <a href="#connect">Contact · SNS</a>
+      </nav>
+
+      <!-- 1. 학력 섹션 -->
+      <section id="education" class="section-block">
+        <h2>🎓 학력</h2>
+        <ul class="timeline">
+          <li>
+            <span class="timeline-year">2025 – 현재</span>
+            <div class="timeline-body">
+              <strong>OOO대학교 ○○○학과 석사 과정</strong>
+              <p>스마트 인프라 / 디지털트윈 / AI 기반 건설 분야 연구</p>
+            </div>
+          </li>
+          <li>
+            <span class="timeline-year">2019 – 2025</span>
+            <div class="timeline-body">
+              <strong>OOO대학교 건축공학과 (학사)</strong>
+              <p>건축 구조·시공·스마트 건설 관련 전공 과목 수강 및 프로젝트 수행</p>
+            </div>
+          </li>
+          <!-- 필요한 만큼 li 추가해서 써줘 -->
+        </ul>
+      </section>
+
+      <!-- 2. 프로젝트 섹션 -->
+      <section id="projects" class="section-block">
+        <h2>🧪 프로젝트</h2>
+        <p class="section-desc">
+          연구·수업·토이 프로젝트를 정리해 두는 공간입니다.
+          각 카드는 나중에 GitHub · Notion 등으로 링크를 걸 수 있어요.
+        </p>
+
+        <div class="card-grid">
+          <article class="item-card">
+            <h3>Smart AIoT Infra Dashboard</h3>
+            <p>
+              서울 교통 혼잡·도로 용량·CO₂ 배출량 데이터를 시각화하고,
+              재개발 후보 구역을 분석하는 대시보드 프로젝트.
+            </p>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>Streamlit</li>
+              <li>Data Viz</li>
+            </ul>
+            <a href="https://github.com/your-github/aiot-dashboard" target="_blank" class="item-link">
+              <i class="fa-brands fa-github"></i>
+              GitHub 바로가기
+            </a>
+          </article>
+
+          <article class="item-card">
+            <h3>AR 기반 현장 안전 점검 (디지털트윈)</h3>
+            <p>
+              Unity와 AR을 활용해, 건축 현장의 법규 위반 요소를 실시간으로
+              표시하는 프로토타입 애플리케이션.
+            </p>
+            <ul class="tag-list">
+              <li>Unity</li>
+              <li>AR</li>
+              <li>건설 안전</li>
+            </ul>
+            <a href="#" class="item-link">
+              프로젝트 정리 (예정)
+            </a>
+          </article>
+
+          <article class="item-card">
+            <h3>InPd 촉매 · CO₂ 수소화 연구</h3>
+            <p>
+              InPd 기반 이중금속 촉매를 합성하고 CO₂→메탄올 전환 반응에서
+              구조–활성 상관관계를 분석한 연구.
+            </p>
+            <ul class="tag-list">
+              <li>Catalyst</li>
+              <li>CO₂ Hydrogenation</li>
+              <li>TEM · XPS</li>
+            </ul>
+            <a href="#" class="item-link">
+              논문/노트 (예정)
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 능력(스킬) 섹션 -->
+      <section id="skills" class="section-block">
+        <h2>🛠 능력 · Skill Set</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Development · Data</h3>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">NumPy / Pandas</span>
+              <span class="chip">TensorFlow / PyTorch</span>
+              <span class="chip">Streamlit</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Smart Construction · DT</h3>
+            <div class="chip-row">
+              <span class="chip">BIM / Revit</span>
+              <span class="chip">Digital Twin</span>
+              <span class="chip">Unity (AR/VR)</span>
+              <span class="chip">Construction Safety</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Research · Analysis</h3>
+            <div class="chip-row">
+              <span class="chip">Experiment Design</span>
+              <span class="chip">TEM / XPS Interpretation</span>
+              <span class="chip">Data Visualization</span>
+              <span class="chip">Technical Writing</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <div class="chip-row">
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">Notion</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Jupyter / Colab</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 공부 기록 섹션 -->
+      <section id="notes" class="section-block">
+        <h2>📚 공부 기록 · Notes</h2>
+        <p class="section-desc">
+          Velog, 블로그, 노션 등에 정리한 글들을 모아두는 공간입니다.
+          실제 글 링크로 바꿔서 써 주세요.
+        </p>
+
+        <ul class="note-list">
+          <li>
+            <span class="note-tag">ML</span>
+            <a href="https://velog.io/@your-velog/ml-basic" target="_blank">
+              딥러닝 기본기 정리: Perceptron부터 CNN까지
+            </a>
+            <span class="note-date">2025.03</span>
+          </li>
+          <li>
+            <span class="note-tag">DT</span>
+            <a href="#" target="_blank">
+              디지털트윈과 건설 안전: 개념·사례·연구 아이디어
+            </a>
+            <span class="note-date">2025.02</span>
+          </li>
+          <li>
+            <span class="note-tag">Catalysis</span>
+            <a href="#" target="_blank">
+              InPd 촉매 CO 흡탈착 DRIFTS 해석 노트
+            </a>
+            <span class="note-date">2025.01</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 5. 추천 섹션: 지금 하는 일 & 목표 -->
+      <section id="now" class="section-block">
+        <h2>✨ 지금 하는 일 & 앞으로</h2>
+
+        <div class="now-grid">
+          <div>
+            <h3>Now</h3>
+            <ul class="bullet-list">
+              <li>석사 연구 주제 구체화 및 선행연구 리딩</li>
+              <li>딥러닝 · 컴퓨터비전 · AR 관련 심화 공부</li>
+              <li>GitHub / Velog에 실험·공부 기록 정리</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Goals</h3>
+            <ul class="bullet-list">
+              <li>스마트 건설/디지털트윈 분야 R&D 엔지니어로 성장</li>
+              <li>연구 결과를 논문 및 학회 발표로 연결</li>
+              <li>실제 현장에 도움이 되는 서비스/툴 프로토타입 제작</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Contact & SNS -->
+      <section id="connect" class="section-block section-connect">
+        <h2>📬 Contact & SNS</h2>
+        <p class="section-desc">
+          아래 아이콘을 클릭하면 각 페이지로 이동합니다.
+          실제 계정 링크로 수정해서 사용하세요.
+        </p>
+
+        <div class="social-grid">
+          <a
+            class="social-card"
+            href="https://github.com/your-github"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span class="social-label">GitHub</span>
+            <span class="social-sub">@your-github</span>
+          </a>
+
+          <a
+            class="social-card"
+            href="https://velog.io/@your-velog"
+            target="_blank"
+          >
+            <i class="fa-solid fa-pen-nib"></i>
+            <span class="social-label">Velog / Blog</span>
+            <span class="social-sub">@your-velog</span>
+          </a>
+
+          <a
+            class="social-card"
+            href="https://www.instagram.com/your-instagram"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span class="social-label">Instagram</span>
+            <span class="social-sub">@your-instagram</span>
+          </a>
+
+          <a
+            class="social-card"
+            href="mailto:youremail@example.com"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            <span class="social-label">E-mail</span>
+            <span class="social-sub">youremail@example.com</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>© 2025 zioni. All rights reserved.</span>
+        <span>Made with 🍓 milk mood</span>
+      </footer>
     </div>
-
-    <h1>
-      <span class="emoji">🍓</span>
-      안녕하세요, 저는 zioni입니다
-    </h1>
-    <p class="lead">
-      이 페이지는  <b>zioni의 GitHub Pages</b> 입니다.<br />
-      공부 기록, 프로젝트, 포트폴리오를 천천히 채워갈 예정이에요.
-    </p>
-
-    <h2><span class="icon">🔗</span>링크 모음</h2>
-    <div class="pill-links">
-      <div class="pill">
-        <span class="emoji">💻</span>
-        <a href="https://github.com/내아이디" target="_blank">GitHub 바로가기</a>
-      </div>
-      <div class="pill">
-        <span class="emoji">📒</span>
-        <a href="#" target="_blank">Notion / 블로그</a>
-      </div>
-      <div class="pill">
-        <span class="emoji">📊</span>
-        <span>Toy Projects (추가 예정)</span>
-      </div>
-    </div>
-
-    <h2><span class="icon">📌</span>앞으로 채워갈 내용</h2>
-    <ul>
-      <li>진행 중인 프로젝트 요약 카드</li>
-      <li>딥러닝 / 컴퓨터비전 / 데이터분석 공부 기록</li>
-      <li>TIL, 회고, 목표 체크리스트</li>
-    </ul>
-
-    <h2><span class="icon">✨</span>한 줄 소개</h2>
-    <p class="lead">
-      "데이터·코딩·건설·디지털트윈을 연결해서, 현실 문제를 푸는 걸 좋아하는 사람입니다."
-    </p>
-
-    <div class="footer">
-      <div>© <span id="year"></span> <span class="highlight">OOO</span>. All rights reserved.</div>
-      <div>Made with <span class="highlight">🍓 milk mood</span></div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  </main>
 </body>
 </html>
