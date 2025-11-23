@@ -65,3 +65,36 @@ body {
   background-image: url("/assets/icons/thread.png");
 }
 
+/* === Contact & Links 아이콘 통일 스타일 === */
+
+.contact-icons {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 6px 14px rgba(255, 110, 167, 0.25);
+  text-decoration: none !important;
+  border-bottom: none;
+  color: #ff6ea7; /* 아이콘(폰트어썸) 색 */
+}
+
+/* 폰트어썸 아이콘 크기 */
+.contact-icon i {
+  font-size: 20px;
+}
+
+/* 이미지 로고 크기 */
+.contact-icon img {
+  height: 20px;
+  width: auto;
+  display: block;
+}
