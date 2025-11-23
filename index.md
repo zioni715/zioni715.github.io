@@ -66,7 +66,7 @@ focused on smart infrastructure that integrates architecture and civil engineeri
             border-radius:999px;background:#ffffff;
             box-shadow:0 6px 14px rgba(255,110,167,0.25);
             text-decoration:none;border-bottom:none;">
-    <img src="/assets/icons/threads.png" alt="Threads"
+    <img src="/assets/icons/thread.png" alt="Threads"
          style="height:22px;width:22px;object-fit:contain;">
   </a>
 
