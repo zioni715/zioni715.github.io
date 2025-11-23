@@ -15,28 +15,69 @@ focused on smart infrastructure that integrates architecture and civil engineeri
 
 ## Contact & Links
 
-<p class="contact-icons">
-  <a class="contact-icon" href="https://github.com/zioni715" target="_blank">
-    <i class="fab fa-github"></i>
+<p style="text-align:center; margin-top:1.5rem;">
+
+  <!-- GitHub -->
+  <a href="https://github.com/zioni715" target="_blank"
+     style="display:inline-flex;align-items:center;justify-content:center;
+            width:40px;height:40px;margin:0 8px;
+            border-radius:999px;background:#ffffff;
+            box-shadow:0 6px 14px rgba(255,110,167,0.25);
+            text-decoration:none;border-bottom:none;">
+    <i class="fab fa-github" style="font-size:20px;color:#ff6ea7;"></i>
   </a>
 
-  <a class="contact-icon" href="https://velog.io/@hamzzi_lover" target="_blank">
-    <img src="/assets/icons/green favicon.png" alt="Velog">
+  <!-- Velog -->
+  <a href="https://velog.io/@hamzzi_lover" target="_blank"
+     style="display:inline-flex;align-items:center;justify-content:center;
+            width:40px;height:40px;margin:0 8px;
+            border-radius:999px;background:#ffffff;
+            box-shadow:0 6px 14px rgba(255,110,167,0.25);
+            text-decoration:none;border-bottom:none;">
+    <img src="/assets/icons/green favicon.png" alt="Velog"
+         style="height:22px;width:22px;object-fit:contain;">
   </a>
 
-  <a class="contact-icon" href="https://blog.naver.com/wowgiroong_715" target="_blank">
-    <img src="/assets/icons/naver_blog.png" alt="Naver Blog">
+  <!-- Naver Blog -->
+  <a href="https://blog.naver.com/wowgiroong_715" target="_blank"
+     style="display:inline-flex;align-items:center;justify-content:center;
+            width:40px;height:40px;margin:0 8px;
+            border-radius:999px;background:#ffffff;
+            box-shadow:0 6px 14px rgba(255,110,167,0.25);
+            text-decoration:none;border-bottom:none;">
+    <img src="/assets/icons/naver_blog.png" alt="Naver Blog"
+         style="height:22px;width:22px;object-fit:contain;">
   </a>
 
-  <a class="contact-icon" href="https://instagram.com/mynameisnu.__.ll" target="_blank">
-    <i class="fab fa-instagram"></i>
+  <!-- Instagram -->
+  <a href="https://instagram.com/mynameisnu.__.ll" target="_blank"
+     style="display:inline-flex;align-items:center;justify-content:center;
+            width:40px;height:40px;margin:0 8px;
+            border-radius:999px;background:#ffffff;
+            box-shadow:0 6px 14px rgba(255,110,167,0.25);
+            text-decoration:none;border-bottom:none;">
+    <i class="fab fa-instagram" style="font-size:20px;color:#ff6ea7;"></i>
   </a>
 
-  <a class="contact-icon" href="https://www.threads.net/@mynameisnu.__.ll" target="_blank">
-    <img src="/assets/icons/thread.png" alt="Threads">
+  <!-- Threads -->
+  <a href="https://www.threads.net/@mynameisnu.__.ll" target="_blank"
+     style="display:inline-flex;align-items:center;justify-content:center;
+            width:40px;height:40px;margin:0 8px;
+            border-radius:999px;background:#ffffff;
+            box-shadow:0 6px 14px rgba(255,110,167,0.25);
+            text-decoration:none;border-bottom:none;">
+    <img src="/assets/icons/threads.png" alt="Threads"
+         style="height:22px;width:22px;object-fit:contain;">
   </a>
 
-  <a class="contact-icon" href="mailto:yourname@gmail.com" target="_blank">
-    <i class="fab fa-google"></i>
+  <!-- Gmail -->
+  <a href="mailto:jennysiw715557@gmail.com" target="_blank"
+     style="display:inline-flex;align-items:center;justify-content:center;
+            width:40px;height:40px;margin:0 8px;
+            border-radius:999px;background:#ffffff;
+            box-shadow:0 6px 14px rgba(255,110,167,0.25);
+            text-decoration:none;border-bottom:none;">
+    <i class="fab fa-google" style="font-size:20px;color:#ff6ea7;"></i>
   </a>
+
 </p>
