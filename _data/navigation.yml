@@ -7,6 +7,8 @@ main:
     url: "/projects/"
   - title: "Skills"
     url: "/skills/"
+  - title: "Licenses"
+    url: "/licenses/"
   - title: "Researchs"
     url: "/researchs/"
   - title: "Study"
