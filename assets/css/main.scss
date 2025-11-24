@@ -30,40 +30,40 @@ body {
 
 /* === Custom social icons (Velog / Naver Blog / Threads) === */
 
-/* 1) 기존 Font Awesome 아이콘은 숨기기 */
-.author__urls a[href*="velog.io"] i,
-.author__urls a[href*="blog.naver.com"] i,
-.author__urls a[href*="threads.net"] i {
-  display: none;
-}
+// /* 1) 기존 Font Awesome 아이콘은 숨기기 */
+// .author__urls a[href*="velog.io"] i,
+// .author__urls a[href*="blog.naver.com"] i,
+// .author__urls a[href*="threads.net"] i {
+//   display: none;
+// }
 
-/* 2) label 앞에 커스텀 로고 붙이기 */
-.author__urls a[href*="velog.io"] .label::before,
-.author__urls a[href*="blog.naver.com"] .label::before,
-.author__urls a[href*="threads.net"] .label::before {
-  content: "";
-  display: inline-block;
-  width: 1.1em;
-  height: 1.1em;
-  margin-right: 0.35em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  vertical-align: text-bottom;
-}
+// /* 2) label 앞에 커스텀 로고 붙이기 */
+// .author__urls a[href*="velog.io"] .label::before,
+// .author__urls a[href*="blog.naver.com"] .label::before,
+// .author__urls a[href*="threads.net"] .label::before {
+//   content: "";
+//   display: inline-block;
+//   width: 1.1em;
+//   height: 1.1em;
+//   margin-right: 0.35em;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   vertical-align: text-bottom;
+// }
 
-/* 3) 각각 이미지 경로 지정 */
-.author__urls a[href*="velog.io"] .label::before {
-  background-image: url("/assets/icons/green favicon.png");
-}
+// /* 3) 각각 이미지 경로 지정 */
+// .author__urls a[href*="velog.io"] .label::before {
+//   background-image: url("/assets/icons/green favicon.png");
+// }
 
-.author__urls a[href*="blog.naver.com"] .label::before {
-  background-image: url("/assets/icons/naver_blog.png");
-}
+// .author__urls a[href*="blog.naver.com"] .label::before {
+//   background-image: url("/assets/icons/naver_blog.png");
+// }
 
-.author__urls a[href*="threads.net"] .label::before {
-  background-image: url("/assets/icons/thread.png");
-}
+// .author__urls a[href*="threads.net"] .label::before {
+//   background-image: url("/assets/icons/thread.png");
+// }
 
 // /* === Contact & Links 아이콘 통일 스타일 === */
 
@@ -98,3 +98,45 @@ body {
 //   width: auto;
 //   display: block;
 // }
+
+/* === Sidebar social icons: unify alignment === */
+
+/* 기본 아이콘 박스 너비 통일 */
+.author__urls .icon {
+  width: 1.4em;
+  text-align: center;
+}
+
+/* Velog / Naver Blog / Threads: 폰트어썸 글자는 숨기고, 로고만 표시 */
+.author__urls a[href*="velog.io"] .icon,
+.author__urls a[href*="blog.naver.com"] .icon,
+.author__urls a[href*="threads.net"] .icon {
+  font-size: 0; /* 박스는 그대로 두고, 글리프만 안 보이게 */
+}
+
+/* 로고 이미지를 아이콘 박스 안에 넣기 */
+.author__urls a[href*="velog.io"] .icon::before,
+.author__urls a[href*="blog.naver.com"] .icon::before,
+.author__urls a[href*="threads.net"] .icon::before {
+  content: "";
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+/* 각각 로고 이미지 경로 */
+.author__urls a[href*="velog.io"] .icon::before {
+  background-image: url("/assets/icons/green favicon.png");
+}
+
+.author__urls a[href*="blog.naver.com"] .icon::before {
+  background-image: url("/assets/icons/naver_blog.png");
+}
+
+.author__urls a[href*="threads.net"] .icon::before {
+  background-image: url("/assets/icons/thread.png");
+}
