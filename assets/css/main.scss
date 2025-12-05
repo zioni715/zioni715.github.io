@@ -128,3 +128,30 @@ body {
 .author__urls a[href*="blog.naver.com"] .icon::before {
   background-image: url("/assets/icons/naver_blog.png");
 }
+
+/* === Tech stack badge layout === */
+.tech-stack {
+  margin-top: 0.25rem;
+}
+
+.tech-stack .badge-title {
+  margin: 0.9rem 0 0.35rem;
+  font-weight: 700;
+  color: #5a4a53;
+}
+
+.tech-stack .badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.tech-stack .tech-badge {
+  height: 32px;
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(255, 110, 167, 0.18);
+  display: block;
+}

@@ -7,32 +7,72 @@ author_profile: true
 > 💡 건설 환경에 적용할 수 있는 스마트 시스템을 개발하는 연구자입니다
 {: .lead}
 
-건축공학과 건설환경공학을 잇는 스마트 인프라 프로젝트, 연구 노트, 학습 기록을 정리합니다.  
-데이터 기반 의사결정과 현장 자동화를 연결하는 방법을 탐구합니다.
 
 ## 학력
-- 2020–2025 · 서울과학기술대학교 건축학부 건축공학 전공 (B.S.)
-- 2026– · 연세대학교 공과대학 토목환경공학부 (M.S.)
+- 2020–2025 | 서울과학기술대학교 건축학부 건축공학전공 (B.S.)
+- 2026– | 연세대학교 대학원 건설환경공학부 (M.S.)
 
 ## 전공 & 관심 분야
 - 전공: 건축공학, 건설환경공학
-- 관심 분야: 스마트 인프라, 건설 데이터 분석, 인프라 유지관리 자동화, 건설자동화, 디지털트윈
+- 관심 분야: 스마트 인프라, 인프라 유지관리 자동화, 건설자동화, 디지털트윈
 
 ## 세부 연구 주제
 - 스마트 인프라 운영 자동화
-- 센서 데이터 기반 상태 모니터링
-- GIS / 공간 데이터 분석
-- 구조물 성능 시뮬레이션
+- 디지털트윈
 - 건설 자동화
 
-## 기술 스택 (요약)
-- 프로그래밍: Python, C#, MATLAB
-- BIM/CAD: Revit, AutoCAD, SketchUp, Rhino, Tekla
-- 시각화·렌더링: Lumion, Blender, Navisworks
-- 개발/엔진: Unity
-- 시뮬레이션: EES
-- 프로젝트 관리·협업: Primavera P6, Git/GitHub, Docker, Notion
-- 운영환경: Windows, Linux(Ubuntu)
+## 기술 스택
+
+<div class="tech-stack">
+  <p class="badge-title">프로그래밍</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" class="tech-badge">
+    <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#" class="tech-badge">
+    <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB" class="tech-badge">
+  </div>
+
+  <p class="badge-title">BIM / CAD</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/Revit-0078D4?style=for-the-badge&logo=autodesk&logoColor=white" alt="Revit" class="tech-badge">
+    <img src="https://img.shields.io/badge/AutoCAD-0078D4?style=for-the-badge&logo=autodesk&logoColor=white" alt="AutoCAD" class="tech-badge">
+    <img src="https://img.shields.io/badge/SketchUp-005A9C?style=for-the-badge&logo=sketchup&logoColor=white" alt="SketchUp" class="tech-badge">
+    <img src="https://img.shields.io/badge/Rhino%208-801010?style=for-the-badge&logoColor=white" alt="Rhino" class="tech-badge">
+    <img src="https://img.shields.io/badge/Tekla-0099FF?style=for-the-badge&logoColor=white" alt="Tekla" class="tech-badge">
+  </div>
+
+  <p class="badge-title">시각화 · 렌더링</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/Lumion-00A4EF?style=for-the-badge&logoColor=white" alt="Lumion" class="tech-badge">
+    <img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" class="tech-badge">
+    <img src="https://img.shields.io/badge/Navisworks-0078D4?style=for-the-badge&logo=autodesk&logoColor=white" alt="Navisworks" class="tech-badge">
+  </div>
+
+  <p class="badge-title">개발 / 엔진</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity" class="tech-badge">
+  </div>
+
+  <p class="badge-title">시뮬레이션 · 분석</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/EES-FF6B00?style=for-the-badge&logoColor=white" alt="EES" class="tech-badge">
+  </div>
+
+  <p class="badge-title">프로젝트 관리 · 협업</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/Primavera%20P6-0078D4?style=for-the-badge&logo=oracle&logoColor=white" alt="Primavera P6" class="tech-badge">
+    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" class="tech-badge">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" class="tech-badge">
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" class="tech-badge">
+    <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" class="tech-badge">
+  </div>
+
+  <p class="badge-title">운영환경</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows" class="tech-badge">
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" class="tech-badge">
+    <img src="https://img.shields.io/badge/Ubuntu-DA4633?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" class="tech-badge">
+  </div>
+</div>
 
 ## Contact & Links
 
