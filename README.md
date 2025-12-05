@@ -1,4 +1,8 @@
-# 👩🏻‍🦰 ZAC (Zioni Architecture & Civil) <img src="/assets/images/mimoticon.png" width="40" alt="미모티콘" />
+<p align="center">
+	<img src="assets/images/mimoticon.png" width="96" alt="미모티콘" />
+</p>
+
+# <div align="center">ZAC (Zioni Architecture & Civil)</div>
 
 ## 소개
 
@@ -71,13 +75,11 @@ BIM / CAD 설계 도구
 
 
 ## 📬 링크
-👩🏻‍🦰 Website : https://zioni715.github.io
+<img src="assets/images/mimoticon.png" width="21" alt="미모티콘" /> Website : https://zioni715.github.io
 
-🐈‍⬛ GitHub: https://github.com/zioni715
+🐙 GitHub: https://github.com/zioni715
 
 ✍️ Velog: https://velog.io/@hamzzi_lover
 
 📝 Naver Blog: https://blog.naver.com/wowgiroong_715
-
-✉️ Email: `jennysiw715557@gmail.com` <img src="/assets/images/mimoticon.png" width="20" alt="미모티콘" />
 
