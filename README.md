@@ -15,9 +15,14 @@
 
 ➡️ 전공: Architectural Engineering (B.S.)
 
-🎓 2026- | <img src="assets/images/yonsei.png" width="20" alt="Yonsei logo" /> Yonsei University
+🎓 2026-     | <img src="assets/images/yonsei.png" width="20" alt="Yonsei logo" /> Yonsei University
 
 ➡️ 전공: Civil and Environmental Engineering (M.S.)
+
+## 🏫 외부 교육 · 부트캠프
+
+- 2024.06–2024.08 | 스마트 건설산업 전문인력 양성과정(건축·토목)
+- 2025.08–2026.02 | [HDC Labs] 생성형 AI 활용 스마트 IoT 분석 및 서비스 개발 과정
 
 ## 🧭 전공
 
@@ -83,4 +88,3 @@ BIM / CAD 설계 도구
 ✍️ Velog: https://velog.io/@hamzzi_lover
 
 📝 Naver Blog: https://blog.naver.com/wowgiroong_715
-
