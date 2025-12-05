@@ -1,24 +1,26 @@
-# 👩🏻‍🦰 ZAC (Zioni Architecture & Civil)
+# 👩🏻‍🦰 ZAC (Zioni Architecture & Civil) <img src="/assets/images/mimoticon.png" width="40" alt="미모티콘" />
 
-간단 소개
-- 건축·토목의 교차점에서 스마트 인프라를 연구하는 연구자/학생입니다. 이 저장소는 제 개인 사이트 소스이며, 포트폴리오·연구 노트·공부 기록을 정리해 둔 공간입니다.
-----
+## 소개
 
-📘 학력
-- 2020–2025 | Seoul National University of Science and Technology
-	- 전공: Architectural Engineering (B.S.)
-- 2026- | Yonsei University
- 	- 전공: Civil and Environmental Engineering (M.S.)
-  
-----
+💡 건설 환경에 적용할 수 있는 스마트 시스템을 개발하는 연구자입니다
 
-🎓 전공
-- 전공: 건축공학, 건설환경공학
-- 관심 분야: 스마트 인프라, 건설 데이터 분석, 인프라 유지관리 자동화, 건설자동화, 디지털트윈
+## 학력
 
-----
+🎓 2020–2025 | Seoul National University of Science and Technology
 
-🧰 기술 스택
+➡️ 전공: Architectural Engineering (B.S.)
+
+🎓 2026- | Yonsei University
+
+➡️ 전공: Civil and Environmental Engineering (M.S.)
+
+## 전공
+
+🔬 전공: 건축공학, 건설환경공학
+
+⭐ 관심 분야: 스마트 인프라, 건설 데이터 분석, 인프라 유지관리 자동화, 건설자동화, 디지털트윈
+
+## 기술 스택
 
 <!-- 배지들: shields.io 사용 -->
 
@@ -42,6 +44,10 @@ BIM / CAD 설계 도구
 
 ![EES](https://img.shields.io/badge/EES-FF6B00?style=for-the-badge&logoColor=white)
 
+프로젝트 관리 / 일정
+
+![Primavera P6](https://img.shields.io/badge/Primavera%20P6-0078D4?style=for-the-badge&logo=oracle&logoColor=white)
+
 버전관리 / 협업 도구
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
@@ -50,22 +56,28 @@ BIM / CAD 설계 도구
 
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Ubuntu](https://img.shields.io/badge/Ubuntu-DA4633?style=for-the-badge&logo=ubuntu&logoColor=white)
 
-----
 
 
+## 🔬 세부 전공
+🔎 스마트 인프라 운영 자동화
 
-🔬 세부 전공
-- 스마트 인프라 운영 자동화
-- 센서 데이터 기반 상태 모니터링
-- GIS / 공간 데이터 분석
-- 구조물 성능 시뮬레이션
-- 건설 자동화
+🔎 센서 데이터 기반 상태 모니터링
 
-📬 링크
-- Website : https://zioni715.github.io
-- GitHub: https://github.com/zioni715
-- Velog: https://velog.io/@hamzzi_lover
-- Naver Blog: https://blog.naver.com/wowgiroong_715
-- Email: `jennysiw715557@gmail.com`
+🔎 GIS / 공간 데이터 분석
 
+🔎 구조물 성능 시뮬레이션
+
+🔎 건설 자동화
+
+
+## 📬 링크
+👩🏻‍🦰 Website : https://zioni715.github.io
+
+🐈‍⬛ GitHub: https://github.com/zioni715
+
+✍️ Velog: https://velog.io/@hamzzi_lover
+
+📝 Naver Blog: https://blog.naver.com/wowgiroong_715
+
+✉️ Email: `jennysiw715557@gmail.com` <img src="/assets/images/mimoticon.png" width="20" alt="미모티콘" />
 
