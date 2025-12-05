@@ -5,7 +5,7 @@
 **🔎 요약**
 - **사이트 주소:** 🌍 https://zioni715.github.io
 - **주요 기술:** 🛠️ Jekyll, `mmistakes/minimal-mistakes` 테마
-- **작성자:** 👩🏻‍🦰 SON JIWON (`zioni715`)
+- **작성자:** 👩🏻‍🦰? SON JIWON (`zioni715`)
 
 **📚 주요 내용 (빠른 링크)**
 - 📁 포트폴리오: `projects.md`
