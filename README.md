@@ -15,7 +15,7 @@
 
 ➡️ 전공: Architectural Engineering (B.S.)
 
-🎓 2026-     | <img src="assets/images/yonsei.png" width="20" alt="Yonsei logo" /> Yonsei University
+🎓 2026-     | <img src="assets/images/yonsei.png" width="20" alt="Yonsei logo" /> Graduate School, Yonsei University
 
 ➡️ 전공: Civil and Environmental Engineering (M.S.)
 
