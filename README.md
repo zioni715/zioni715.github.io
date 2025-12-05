@@ -4,9 +4,8 @@
 
 # <div align="center">ZAC (Zioni Architecture & Civil)</div>
 
-## 소개
+## <img src="assets/images/mimoticon.png" width="36" alt="미모티콘" />소개
 
-<img src="assets/images/mimoticon.png" width="48" alt="미모티콘" />
 
 💡 건설 환경에 적용할 수 있는 스마트 시스템을 개발하는 연구자입니다
 
