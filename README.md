@@ -11,11 +11,11 @@
 
 ## 🎓 학력
 
-🎓 2020–2025 | Seoul National University of Science and Technology
+🎓 2020–2025 | <img src="assets/images/seoultech.gif" width="20" alt="SeoulTech logo" /> Seoul National University of Science and Technology
 
 ➡️ 전공: Architectural Engineering (B.S.)
 
-🎓 2026- | Yonsei University
+🎓 2026- | <img src="assets/images/yonsei.png" width="20" alt="Yonsei logo" /> Yonsei University
 
 ➡️ 전공: Civil and Environmental Engineering (M.S.)
 
