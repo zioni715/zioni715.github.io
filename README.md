@@ -34,35 +34,35 @@
 
 <!-- 배지들: shields.io 사용 -->
 
-프로그래밍 언어
+💻 프로그래밍 언어
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![CSharp](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
 
-BIM / CAD 설계 도구
+🏗️ BIM / CAD 설계 도구
 
 ![Revit](https://img.shields.io/badge/Revit-0078D4?style=for-the-badge&logo=autodesk&logoColor=white) ![AutoCAD](https://img.shields.io/badge/AutoCAD-0078D4?style=for-the-badge&logo=autodesk&logoColor=white) ![SketchUp](https://img.shields.io/badge/SketchUp-005A9C?style=for-the-badge&logo=sketchup&logoColor=white) ![Rhino](https://img.shields.io/badge/Rhino%208-801010?style=for-the-badge&logoColor=white) ![Tekla](https://img.shields.io/badge/Tekla-0099FF?style=for-the-badge&logoColor=white)
 
-렌더링 / 시각화
+🎨 렌더링 / 시각화
 
 ![Lumion](https://img.shields.io/badge/Lumion-00A4EF?style=for-the-badge&logoColor=white) ![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white) ![Navisworks](https://img.shields.io/badge/Navisworks-0078D4?style=for-the-badge&logo=autodesk&logoColor=white)
 
-게임엔진 / 개발
+🕹️ 게임엔진 / 개발
 
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 
-시뮬레이션 / 분석
+🔬 시뮬레이션 / 분석
 
 ![EES](https://img.shields.io/badge/EES-FF6B00?style=for-the-badge&logoColor=white)
 
-프로젝트 관리 / 일정
+🗂️ 프로젝트 관리 / 일정
 
 ![Primavera P6](https://img.shields.io/badge/Primavera%20P6-0078D4?style=for-the-badge&logo=oracle&logoColor=white)
 
-버전관리 / 협업 도구
+🤝 버전관리 / 협업 도구
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
-운영환경
+🖥️ 운영환경
 
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Ubuntu](https://img.shields.io/badge/Ubuntu-DA4633?style=for-the-badge&logo=ubuntu&logoColor=white)
 
