@@ -1,31 +1,71 @@
-# 🌐 ZAC (Zioni Architecture & Civil)
+# 👩🏻‍🦰 ZAC (Zioni Architecture & Civil)
 
-이 저장소는 개인 포트폴리오 사이트(블로그/포트폴리오)를 Jekyll과 "Minimal Mistakes" 테마로 구성한 것입니다. 이 사이트는 건축과 토목의 교차점에서 스마트 인프라를 연구하는 개인 기록(프로젝트, 연구 노트, 공부 기록 등)을 모아둔 곳입니다.
+간단 소개
+- 건축·토목의 교차점에서 스마트 인프라를 연구하는 연구자/학생입니다. 이 저장소는 제 개인 사이트 소스이며, 포트폴리오·연구 노트·공부 기록을 정리해 둔 공간입니다.
+----
 
-**🔎 요약**
-- **사이트 주소:** 🌍 https://zioni715.github.io
-- **주요 기술:** 🛠️ Jekyll, `mmistakes/minimal-mistakes` 테마
-- **작성자:** 👩🏻‍🦰? SON JIWON (`zioni715`)
+📘 학력
+- 2020–2025 | Seoul National University of Science and Technology
+	- 전공: Architectural Engineering (B.S.)
+- 2026- | Yonsei University
+ 	- 전공: Civil and Environmental Engineering (M.S.)
+  
+----
 
-**📚 주요 내용 (빠른 링크)**
-- 📁 포트폴리오: `projects.md`
-- 📝 연구 노트: `researchs.md`
-- 🎓 학력/경력: `education.md`
-- 📜 자격증: `licenses.md`
-- 🧰 사용 기술: `skills.md`
-- 📘 공부 기록: `study.md`
-- ⚙️ 사이트 설정: `_config.yml`
+🎓 전공
+- 전공: 건축공학, 건설환경공학
+- 관심 분야: 스마트 인프라, 건설 데이터 분석, 인프라 유지관리 자동화, 건설자동화, 디지털트윈
 
-**📂 파일 구조(요약)**
-- `_config.yml` : 사이트 메타데이터 및 테마 설정
-- `_data/navigation.yml` : 네비게이션 메뉴
-- `_sass/` 및 `assets/` : 스타일/이미지 등 정적 자원
-- `*.md` (index, projects, researchs 등) : 페이지 콘텐츠
+----
 
-**🎨 커스터마이징 포인트**
-- 🎨 테마 스킨: `_config.yml`의 `minimal_mistakes_skin` 값(`zac`)을 변경
-- 👤 사이드바 프로필은 `_config.yml`의 `author` 항목을 편집
-- 🖼️ 아이콘/이미지는 `assets/icons/`와 `assets/images/`에서 관리
+🧰 기술 스택
 
-**라이선스 및 저작권**
-- 저장소 루트의 `licenses.md`를 참조하세요.
+<!-- 배지들: shields.io 사용 -->
+
+프로그래밍 언어
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![CSharp](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
+
+BIM / CAD 설계 도구
+
+![Revit](https://img.shields.io/badge/Revit-0078D4?style=for-the-badge&logo=autodesk&logoColor=white) ![AutoCAD](https://img.shields.io/badge/AutoCAD-0078D4?style=for-the-badge&logo=autodesk&logoColor=white) ![SketchUp](https://img.shields.io/badge/SketchUp-005A9C?style=for-the-badge&logo=sketchup&logoColor=white) ![Rhino](https://img.shields.io/badge/Rhino%208-801010?style=for-the-badge&logoColor=white) ![Tekla](https://img.shields.io/badge/Tekla-0099FF?style=for-the-badge&logoColor=white)
+
+렌더링 / 시각화
+
+![Lumion](https://img.shields.io/badge/Lumion-00A4EF?style=for-the-badge&logoColor=white) ![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white) ![Navisworks](https://img.shields.io/badge/Navisworks-0078D4?style=for-the-badge&logo=autodesk&logoColor=white)
+
+게임엔진 / 개발
+
+![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
+
+시뮬레이션 / 분석
+
+![EES](https://img.shields.io/badge/EES-FF6B00?style=for-the-badge&logoColor=white)
+
+버전관리 / 협업 도구
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+
+운영환경
+
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Ubuntu](https://img.shields.io/badge/Ubuntu-DA4633?style=for-the-badge&logo=ubuntu&logoColor=white)
+
+----
+
+
+
+🔬 세부 전공
+- 스마트 인프라 운영 자동화
+- 센서 데이터 기반 상태 모니터링
+- GIS / 공간 데이터 분석
+- 구조물 성능 시뮬레이션
+- 건설 자동화
+
+📬 링크
+- Website : https://zioni715.github.io
+- GitHub: https://github.com/zioni715
+- Velog: https://velog.io/@hamzzi_lover
+- Naver Blog: https://blog.naver.com/wowgiroong_715
+- Email: `jennysiw715557@gmail.com`
+
+
