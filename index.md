@@ -35,6 +35,11 @@ author_profile: true
     <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB" class="tech-badge">
   </div>
 
+  <p class="badge-title">🗄️ 데이터베이스</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" class="tech-badge">
+  </div>
+
   <p class="badge-title">🏗️ BIM / CAD 설계 도구</p>
   <div class="badge-row">
     <img src="https://img.shields.io/badge/Revit-0078D4?style=for-the-badge&logo=autodesk&logoColor=white" alt="Revit" class="tech-badge">
@@ -59,6 +64,8 @@ author_profile: true
   <p class="badge-title">🔬 시뮬레이션 / 분석</p>
   <div class="badge-row">
     <img src="https://img.shields.io/badge/EES-FF6B00?style=for-the-badge&logoColor=white" alt="EES" class="tech-badge">
+    <img src="https://img.shields.io/badge/Midas-FF6600?style=for-the-badge&logoColor=white" alt="Midas" class="tech-badge">
+    <img src="https://img.shields.io/badge/Abaqus-1F74B7?style=for-the-badge&logoColor=white" alt="Abaqus" class="tech-badge">
   </div>
 
   <p class="badge-title">🗂️ 프로젝트 관리 / 일정</p>

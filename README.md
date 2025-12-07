@@ -38,6 +38,10 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![CSharp](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
 
+🗄️ 데이터베이스
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
 🏗️ BIM / CAD 설계 도구
 
 ![Revit](https://img.shields.io/badge/Revit-0078D4?style=for-the-badge&logo=autodesk&logoColor=white) ![AutoCAD](https://img.shields.io/badge/AutoCAD-0078D4?style=for-the-badge&logo=autodesk&logoColor=white) ![SketchUp](https://img.shields.io/badge/SketchUp-005A9C?style=for-the-badge&logo=sketchup&logoColor=white) ![Rhino](https://img.shields.io/badge/Rhino%208-801010?style=for-the-badge&logoColor=white) ![Tekla](https://img.shields.io/badge/Tekla-0099FF?style=for-the-badge&logoColor=white)
@@ -52,7 +56,7 @@
 
 🔬 시뮬레이션 / 분석
 
-![EES](https://img.shields.io/badge/EES-FF6B00?style=for-the-badge&logoColor=white)
+![EES](https://img.shields.io/badge/EES-FF6B00?style=for-the-badge&logoColor=white) ![Midas](https://img.shields.io/badge/Midas-FF6600?style=for-the-badge&logoColor=white) ![Abaqus](https://img.shields.io/badge/Abaqus-1F74B7?style=for-the-badge&logoColor=white)
 
 🗂️ 프로젝트 관리 / 일정
 
