@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Study"
+title: "Notes"
 permalink: /study/
 author_profile: true
 ---

@@ -1,9 +1,10 @@
 ---
 layout: single
-title: "Skills"
+title: "Tech Stack"
 permalink: /skills/
 author_profile: true
 ---
+
 
 ## Tech Stack
 

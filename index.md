@@ -4,26 +4,27 @@ title: "ZAC (Zioni Architecture & Civil)"
 author_profile: true
 ---
 
-> 💡 Researcher building smart systems for the built environment
+> 💡 Smart systems for the built environment, bridging architectural and civil engineering.
 {: .lead}
 
 
+## About
+- Building smart systems for the built environment, combining architectural engineering and civil/environmental engineering.
+- Interests: smart infrastructure, maintenance automation, construction automation, and digital twins.
+
 ## Education
-- 2020–2025 | Seoul National University of Science and Technology — Architectural Engineering (B.S.)
-- 2026–     | Yonsei University Graduate School — Civil and Environmental Engineering (M.S.)
+- B.S. in Architectural Engineering, Seoul National University of Science and Technology (2020–2025)
+- M.S. in Civil and Environmental Engineering, Yonsei University Graduate School (2026–present)
 
 ## External Education · Bootcamps
 - 2024.06–2024.08 | 스마트 건설산업 전문인력 양성과정(건축·토목)
 - 2025.08–2026.02 | [HDC Labs] 생성형 AI 활용 스마트 IoT 분석 및 서비스 개발 과정
 
-## Majors & Interests
-- Majors: Architectural Engineering; Civil & Environmental Engineering
-- Interests: Smart infrastructure, infrastructure maintenance automation, construction automation, digital twins
-
-## Research Topics
+## Research Focus
 - Smart infrastructure operations automation
 - Digital twins
 - Construction automation
+- Structural performance simulation
 
 ## Tech Stack
 
