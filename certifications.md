@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Certifications"
-permalink: /licenses/
+permalink: /certifications/
 author_profile: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Background"
-permalink: /education/
+permalink: /background/
 author_profile: true
 ---
 

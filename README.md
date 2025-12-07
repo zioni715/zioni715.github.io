@@ -4,9 +4,6 @@
 
 # <div align="center">ZAC (Zioni Architecture & Civil)</div>
 
-<p align="center">
-  Smart infrastructure & civil engineering researcher. This repo powers my Jekyll (Minimal Mistakes) portfolio: https://zioni715.github.io.
-</p>
 
 ## 🐹 About
 

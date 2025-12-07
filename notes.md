@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Notes"
-permalink: /study/
+permalink: /notes/
 author_profile: true
 ---
 

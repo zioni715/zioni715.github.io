@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Research"
-permalink: /researchs/
+permalink: /research/
 author_profile: true
 ---
 

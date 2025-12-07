@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Tech Stack"
-permalink: /skills/
+permalink: /tech-stack/
 author_profile: true
 ---
 
