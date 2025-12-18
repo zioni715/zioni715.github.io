@@ -18,7 +18,7 @@ plugins:
 # 프로필 정보 (사이드바 + SNS 아이콘)
 author:
   name   : "SON JIWON"
-  avatar : "/assets/images/zioni_pic.png"  
+  avatar : "/assets/images/230056042.jpeg"
   bio    : "건설 환경에 적용할 수 있는 스마트 인프라 시스템을 연구합니다."
   location: "Republic of Korea"
   links:
