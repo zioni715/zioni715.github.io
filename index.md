@@ -150,8 +150,7 @@ author_profile: true
 
 ## GitHub.io QR
 
-<div id="github-io-qr" style="display:flex;justify-content:center;margin-top:0.75rem;"></div>
-<p style="text-align:center;font-size:0.9rem;margin-top:0.4rem;">{{ site.url }}{{ site.baseurl }}</p>
+<div id="" style="display:flex;justify-content:center;margin-top:0.75rem;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script>
