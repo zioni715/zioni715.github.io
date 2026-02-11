@@ -148,23 +148,49 @@ author_profile: true
 
 </p>
 
-## GitHub.io QR
+## QR Links
 
-<div id="" style="display:flex;justify-content:center;margin-top:0.75rem;"></div>
+<div style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:0.75rem;">
+  <div style="text-align:center;">
+    <div style="font-weight:600;font-size:0.95rem;margin-bottom:6px;">Website</div>
+    <div id="qr-website"></div>
+  </div>
+  <div style="text-align:center;">
+    <div style="font-weight:600;font-size:0.95rem;margin-bottom:6px;">GitHub</div>
+    <div id="qr-github"></div>
+  </div>
+  <div style="text-align:center;">
+    <div style="font-weight:600;font-size:0.95rem;margin-bottom:6px;">Velog</div>
+    <div id="qr-velog"></div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script>
   (function () {
-    var el = document.getElementById("github-io-qr");
-    if (!el || typeof QRCode === "undefined") return;
-    el.innerHTML = "";
-    new QRCode(el, {
-      text: "{{ site.url }}{{ site.baseurl }}",
-      width: 160,
-      height: 160,
+    if (typeof QRCode === "undefined") return;
+    var size = 110;
+    var options = {
+      width: size,
+      height: size,
       colorDark: "#1b1b1b",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
-    });
+    };
+    var websiteEl = document.getElementById("qr-website");
+    var githubEl = document.getElementById("qr-github");
+    var velogEl = document.getElementById("qr-velog");
+    if (websiteEl) {
+      websiteEl.innerHTML = "";
+      new QRCode(websiteEl, Object.assign({ text: "{{ site.url }}{{ site.baseurl }}" }, options));
+    }
+    if (githubEl) {
+      githubEl.innerHTML = "";
+      new QRCode(githubEl, Object.assign({ text: "https://github.com/zioni715" }, options));
+    }
+    if (velogEl) {
+      velogEl.innerHTML = "";
+      new QRCode(velogEl, Object.assign({ text: "https://velog.io/@hamzzi_lover" }, options));
+    }
   })();
 </script>
