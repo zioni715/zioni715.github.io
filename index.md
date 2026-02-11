@@ -147,3 +147,25 @@ author_profile: true
   </a>
 
 </p>
+
+## GitHub.io QR
+
+<div id="github-io-qr" style="display:flex;justify-content:center;margin-top:0.75rem;"></div>
+<p style="text-align:center;font-size:0.9rem;margin-top:0.4rem;">{{ site.url }}{{ site.baseurl }}</p>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+  (function () {
+    var el = document.getElementById("github-io-qr");
+    if (!el || typeof QRCode === "undefined") return;
+    el.innerHTML = "";
+    new QRCode(el, {
+      text: "{{ site.url }}{{ site.baseurl }}",
+      width: 160,
+      height: 160,
+      colorDark: "#1b1b1b",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  })();
+</script>
