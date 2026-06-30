@@ -1,6 +1,7 @@
 ---
-layout: single
+layout: null
 title: "Jiwon's Website"
+permalink: /
 author_profile: false
 sidebar: false
 ---

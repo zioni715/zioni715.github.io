@@ -140,7 +140,9 @@ body,
 .page__content,
 .site__container,
 .content-wrap,
-.site__main {
+.site__main,
+.site__wrapper,
+.page-wrapper {
   background: #0f0d18 !important;
   color: #e6e0ff !important;
 }
@@ -162,9 +164,14 @@ body {
 .page__aside,
 .site__sidebar,
 .site__header,
-.site__footer {
-  background: transparent !important;
+.site__footer,
+.page__title,
+.page__header,
+.page__description,
+.page-header__title,
+.page__title--large {
   display: none !important;
+  background: transparent !important;
 }
 
 .page__content,
@@ -172,18 +179,23 @@ body {
 .page__main,
 .site__main,
 .content-wrap,
-.site__container {
+.site__container,
+.site__wrapper,
+.page-wrapper {
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
   padding: 0 !important;
+  display: block !important;
+  background: transparent !important;
 }
 
-.page__title,
-.page__header,
-.page__description,
-.page-header__title {
-  display: none !important;
+section,
+.hero,
+.hero__visual,
+.visual__scene,
+.visual__scene * {
+  display: block !important;
 }
 
 .hero {
