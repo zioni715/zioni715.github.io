@@ -28,8 +28,8 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      padding: 1rem 3rem;
-      gap: 2.5rem;
+      padding: 1.2rem 4rem;
+      gap: 3rem;
       position: sticky;
       top: 0;
       z-index: 50;
@@ -46,16 +46,16 @@
     }
     .nav {
       display: flex;
-      gap: 2rem;
+      gap: 3rem;
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: center;
-      font-size: 0.98rem;
+      font-size: 1rem;
       color: #c3b7ff;
       letter-spacing: 0.03em;
     }
     .nav a {
-      padding: 0.75rem 1rem;
+      padding: 0.95rem 1.15rem;
       border-radius: 999px;
       transition: background 0.2s ease, color 0.2s ease;
     }
@@ -115,6 +115,13 @@
       font-weight: 800;
       letter-spacing: -0.03em;
       color: #f0ecff;
+    }
+    .profile__logo {
+      width: 140px;
+      max-width: 100%;
+      margin: 0.5rem auto 0;
+      display: block;
+      object-fit: contain;
     }
     .profile__research {
       display: grid;
@@ -193,10 +200,15 @@
       color: #c5f1ff;
     }
     .contact-icon {
-      width: 30px;
-      height: 30px;
-      object-fit: contain;
-      display: block;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #6fe3ff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1;
     }
     .profile__work {
       display: grid;
@@ -396,6 +408,7 @@
         <div class="profile__top">
           <div class="avatar"><img src="/assets/images/230056042.jpeg" alt="Son Jiwon"></div>
           <h2 class="profile__name">SON JIWON</h2>
+          <img class="profile__logo" src="/assets/images/zioni_pic.png" alt="Logo">
           <div class="profile__work">
             <h3 class="profile__work-title">What I'm working on now</h3>
             <img class="profile__work-image" src="/assets/images/research-hero.png" alt="Research overview placeholder">
@@ -429,15 +442,15 @@
           <p class="contact-block__title">Contact Me</p>
           <div class="contact-items">
             <a class="contact-item" href="mailto:jennysiw715557@gmail.com">
-              <span class="contact-button"><img class="contact-icon" src="/assets/icons/gmail.png" alt="Gmail"></span>
+              <span class="contact-button"><span class="contact-icon">G</span></span>
               <span class="contact-label">Gmail</span>
             </a>
             <a class="contact-item" href="mailto:jennysiw715557@yonsei.ac.kr">
-              <span class="contact-button"><img class="contact-icon" src="/assets/icons/yonsei-mail.png" alt="Yonsei Mail"></span>
+              <span class="contact-button"><span class="contact-icon">Y</span></span>
               <span class="contact-label">Yonsei</span>
             </a>
             <a class="contact-item" href="mailto:jennysiw715557@kict.re.kr">
-              <span class="contact-button"><img class="contact-icon" src="/assets/icons/kict-mail.png" alt="KICT Mail"></span>
+              <span class="contact-button"><span class="contact-icon">K</span></span>
               <span class="contact-label">KICT</span>
             </a>
           </div>
@@ -448,23 +461,7 @@
         </div>
       </aside>
       <section class="panel visual-panel">
-        <div class="graph-canvas">
-          <div class="graph-center"></div>
-          <div class="graph-node node-doc"></div>
-          <div class="graph-node node-ontology"></div>
-          <div class="graph-node node-consistency"></div>
-          <div class="graph-node node-schedule"></div>
-
-          <div class="graph-edge line-doc"></div>
-          <div class="graph-edge line-ontology"></div>
-          <div class="graph-edge line-consistency"></div>
-          <div class="graph-edge line-schedule"></div>
-
-          <div class="graph-label label-doc">Payment docs</div>
-          <div class="graph-label label-ontology">Ontology</div>
-          <div class="graph-label label-consistency">Consistency</div>
-          <div class="graph-label label-schedule">Schedule AI</div>
-        </div>
+          <div class="graph-canvas"></div>
       </section>
     </main>
   </div>
