@@ -130,17 +130,78 @@ body {
 }
 
 /* === Hero landing page styles === */
+html,
+body,
+.site-wrapper,
+.site,
+.page,
+.page__body,
+.page__main,
+.page__content,
+.site__container,
+.content-wrap,
+.site__main {
+  background: #0f0d18 !important;
+  color: #e6e0ff !important;
+}
+
 body {
-  background: #0f0d18;
-  color: #e6e0ff;
+  background: #0f0d18 !important;
+  color: #e6e0ff !important;
+  min-height: 100vh;
+}
+
+.site-header,
+.site-footer,
+.sidebar,
+.author-profile,
+.author,
+.page-header,
+.page-header__title,
+.page-header__description,
+.page__aside,
+.site__sidebar,
+.site__header,
+.site__footer {
+  background: transparent !important;
+  display: none !important;
+}
+
+.page__content,
+.page__body,
+.page__main,
+.site__main,
+.content-wrap,
+.site__container {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page__title,
+.page__header,
+.page__description,
+.page-header__title {
+  display: none !important;
 }
 
 .hero {
   min-height: 100vh;
-  padding: 4.5rem 0 2.5rem;
+  padding: 1rem 0 2.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: #0f0d18 !important;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 1rem 0 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #0f0d18;
 }
 
 .hero::before,

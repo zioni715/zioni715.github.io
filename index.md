@@ -1,7 +1,8 @@
 ---
 layout: single
 title: "Jiwon's Website"
-author_profile: true
+author_profile: false
+sidebar: false
 ---
 
 <section class="hero hero--visual-only" aria-label="Jiwon\u2019s Website">
