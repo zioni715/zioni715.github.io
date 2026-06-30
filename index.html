@@ -33,7 +33,7 @@
       top: 0;
       z-index: 50;
       backdrop-filter: blur(18px);
-      background: rgba(15,13,24,0.92);
+      background: rgba(15,13,24,0.94);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     .brand {
@@ -52,130 +52,151 @@
       font-size: 0.94rem;
       color: #c3b7ff;
     }
-    .nav a:hover {
-      color: #fff;
-    }
+    .nav a:hover { color: #fff; }
     .hero-shell {
       display: grid;
-      grid-template-columns: repeat(3, minmax(240px, 1fr));
-      gap: 1.4rem;
-      padding: calc(2.5rem + 16px) clamp(1rem, 3vw, 3rem);
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 1.5rem;
+      padding: 2rem clamp(1rem, 3vw, 3rem);
       max-width: 1320px;
       margin: 0 auto;
       min-height: calc(100vh - 82px);
     }
-    .scene {
+    .panel {
+      border-radius: 32px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 22px 80px rgba(0,0,0,0.18);
+      overflow: hidden;
+    }
+    .profile {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      padding: 2rem 1.6rem;
+      min-height: calc(100vh - 82px);
+      justify-content: space-between;
+    }
+    .profile__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+    }
+    .avatar {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 24px 50px rgba(0,0,0,0.2);
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .profile__name {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #f0ecff;
+    }
+    .profile__role {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #c8baf8;
+      line-height: 1.6;
+    }
+    .profile__links {
+      display: grid;
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+    .profile__link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.95rem 1.1rem;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #dcd3ff;
+      font-size: 0.92rem;
+    }
+    .profile__link:hover { background: rgba(255,255,255,0.08); }
+    .profile__link span {
+      display: inline-flex;
+      width: 1.2rem;
+      justify-content: center;
+      color: #bfa8ff;
+    }
+    .profile__footer {
+      display: grid;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: #b9abff;
+      text-align: center;
+    }
+    .visual-panel {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      align-content: start;
+      min-height: calc(100vh - 82px);
+    }
+    .visual-card {
       position: relative;
       min-height: 360px;
-      border-radius: 30px;
-      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 32px;
       background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
       overflow: hidden;
-      box-shadow: 0 22px 80px rgba(0,0,0,0.18);
+      display: grid;
+      place-items: center;
+      padding: 1.4rem;
+      box-shadow: inset 0 0 45px rgba(255,255,255,0.02);
+      overflow: hidden;
     }
-    .scene::before {
-      content: '';
+    .visual-card__label {
       position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top left, rgba(134, 92, 255, 0.18), transparent 28%),
-                  radial-gradient(circle at bottom right, rgba(108, 212, 255, 0.10), transparent 24%);
-      pointer-events: none;
+      top: 1.2rem;
+      left: 1.4rem;
+      color: #d7ccff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
     }
-    .shape {
+    .visual-shape {
       position: absolute;
       border-radius: 999px;
       background: rgba(190,165,255,0.22);
       box-shadow: 0 0 40px rgba(131,98,255,0.16);
     }
-    .ontology .shape--pulse {
-      width: 80px;
-      height: 80px;
-      top: 20%;
-      left: 24%;
-      animation: pulse 3.4s ease-in-out infinite;
-    }
-    .ontology .shape--grid {
-      position: absolute;
-      width: 82%;
-      height: 72px;
-      top: 42%;
-      left: 10%;
-      background-image: linear-gradient(90deg, rgba(255,255,255,0.10) 1px, transparent 1px), linear-gradient(180deg, rgba(255,255,255,0.10) 1px, transparent 1px);
-      background-size: 30px 30px;
-    }
-    .ontology .shape--dot1,
-    .ontology .shape--dot2 {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: rgba(193,150,255,0.88);
-    }
-    .ontology .shape--dot1 {
-      top: 22%;
-      left: 68%;
-      animation: float 4s ease-in-out infinite;
-    }
-    .ontology .shape--dot2 {
-      top: 62%;
-      left: 32%;
-      animation: float 5.2s ease-in-out infinite;
-    }
-    .document .shape--sheet1 {
-      width: 58px;
-      height: 72px;
-      top: 26%;
-      left: 24%;
-      transform: rotate(-12deg);
-      animation: slide-sheet 3.8s ease-in-out infinite;
-      background: rgba(255,255,255,0.14);
-      border-radius: 18px;
-    }
-    .document .shape--sheet2 {
-      width: 66px;
-      height: 78px;
-      top: 46%;
-      left: 56%;
-      transform: rotate(8deg);
-      animation: float 4.5s ease-in-out infinite;
-      background: rgba(255,255,255,0.08);
-      border-radius: 18px;
-    }
-    .document .shape--check {
-      width: 22px;
-      height: 22px;
-      top: 34%;
-      left: 50%;
-      border-radius: 8px;
-      background: rgba(125,94,255,0.86);
-      animation: pop 1.8s ease-in-out infinite;
-    }
+    .ontology .shape--big { width: 80px; height: 80px; top: 24%; left: 18%; animation: pulse 3.4s ease-in-out infinite; }
+    .ontology .shape--grid { width: 84%; height: 54px; top: 46%; left: 8%; background-image: linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(180deg, rgba(255,255,255,0.12) 1px, transparent 1px); background-size: 24px 24px; border-radius: 24px; }
+    .ontology .shape--dot1 { width: 16px; height: 16px; top: 16%; left: 72%; }
+    .ontology .shape--dot2 { width: 14px; height: 14px; top: 72%; left: 44%; }
+    .document .shape--sheet1 { width: 58px; height: 70px; top: 26%; left: 24%; transform: rotate(-12deg); animation: slide-sheet 3.8s ease-in-out infinite; }
+    .document .shape--sheet2 { width: 66px; height: 78px; top: 46%; left: 56%; transform: rotate(8deg); animation: float 4.5s ease-in-out infinite; }
+    .document .shape--check { width: 22px; height: 22px; top: 34%; left: 50%; border-radius: 8px; background: rgba(125,94,255,0.86); animation: pop 1.8s ease-in-out infinite; }
     .site .shape--building1,
-    .site .shape--building2 {
-      width: 18px;
-      position: absolute;
-      top: 28%;
-      background: linear-gradient(180deg, rgba(235,232,255,0.92), rgba(156,118,255,0.88));
-      animation: building-rise ease-in-out infinite;
-    }
-    .site .shape--building1 { left: 28%; height: 94px; animation-duration: 4.2s; }
-    .site .shape--building2 { left: 56%; top: 36%; height: 108px; animation-duration: 4.8s; }
-    .site .shape--arc {
-      width: 160px;
-      height: 160px;
-      top: 52%;
-      left: 30%;
-      border-radius: 50%;
-      border: 1px dashed rgba(233,223,255,0.22);
-      box-shadow: 0 0 40px rgba(125,94,255,0.22);
-      animation: rotate 10s linear infinite;
-    }
+    .site .shape--building2 { width: 20px; position: absolute; background: linear-gradient(180deg, rgba(235,232,255,0.92), rgba(156,118,255,0.88)); animation: building-rise ease-in-out infinite; }
+    .site .shape--building1 { left: 28%; top: 30%; height: 92px; }
+    .site .shape--building2 { left: 56%; top: 38%; height: 108px; }
+    .site .shape--arc { width: 160px; height: 160px; top: 52%; left: 30%; border-radius: 50%; border: 1px dashed rgba(233,223,255,0.22); animation: rotate 10s linear infinite; }
     @keyframes pulse { 0%,100% { transform: scale(0.94); opacity: 0.82; } 50% { transform: scale(1.14); opacity: 1; } }
     @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
     @keyframes slide-sheet { 0%,100% { transform: translateY(0) rotate(-12deg); } 50% { transform: translateY(-12px) rotate(-12deg); } }
     @keyframes pop { 0%,100% { transform: scale(1); } 50% { transform: scale(1.18); } }
     @keyframes building-rise { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
     @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-    @media (max-width: 920px) { .hero-shell { grid-template-columns: 1fr; min-height: auto; } }
+    @media (max-width: 1120px) { .hero-shell { grid-template-columns: 1fr; min-height: auto; } .visual-panel { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) { .topbar { flex-direction: column; align-items: flex-start; } .nav { justify-content: flex-start; } }
   </style>
 </head>
 <body>
@@ -190,21 +211,43 @@
       </nav>
     </header>
     <main class="hero-shell">
-      <section class="scene ontology">
-        <div class="shape shape--pulse"></div>
-        <div class="shape shape--grid"></div>
-        <div class="shape shape--dot1"></div>
-        <div class="shape shape--dot2"></div>
-      </section>
-      <section class="scene document">
-        <div class="shape shape--sheet1"></div>
-        <div class="shape shape--sheet2"></div>
-        <div class="shape shape--check"></div>
-      </section>
-      <section class="scene site">
-        <div class="shape shape--building1"></div>
-        <div class="shape shape--building2"></div>
-        <div class="shape shape--arc"></div>
+      <aside class="panel profile">
+        <div class="profile__top">
+          <div class="avatar"><img src="/assets/images/230056042.jpeg" alt="Son Jiwon"></div>
+          <h2 class="profile__name">SON JIWON</h2>
+          <p class="profile__role">건설 환경에 적용할 수 있는 스마트 인프라 시스템을 연구합니다.</p>
+        </div>
+        <div class="profile__links">
+          <a class="profile__link" href="https://github.com/zioni715" target="_blank" rel="noopener noreferrer"><span>GH</span> GitHub</a>
+          <a class="profile__link" href="https://velog.io/@hamzzi_lover" target="_blank" rel="noopener noreferrer"><span>V</span> Velog</a>
+          <a class="profile__link" href="https://blog.naver.com/wowgiroong_715" target="_blank" rel="noopener noreferrer"><span>N</span> Naver Blog</a>
+          <a class="profile__link" href="mailto:jennysiw715557@gmail.com"><span>@</span> Gmail</a>
+        </div>
+        <div class="profile__footer">
+          <div>Republic of Korea</div>
+          <div>건축공학·토목공학 기반 문서 자동화 연구</div>
+        </div>
+      </aside>
+      <section class="panel visual-panel">
+        <article class="visual-card ontology">
+          <div class="visual-card__label">Ontology</div>
+          <div class="visual-shape shape--big"></div>
+          <div class="visual-shape shape--grid"></div>
+          <div class="visual-shape shape--dot1"></div>
+          <div class="visual-shape shape--dot2"></div>
+        </article>
+        <article class="visual-card document">
+          <div class="visual-card__label">Auto Document</div>
+          <div class="visual-shape shape--sheet1"></div>
+          <div class="visual-shape shape--sheet2"></div>
+          <div class="visual-shape shape--check"></div>
+        </article>
+        <article class="visual-card site">
+          <div class="visual-card__label">Construction Site</div>
+          <div class="visual-shape shape--building1"></div>
+          <div class="visual-shape shape--building2"></div>
+          <div class="visual-shape shape--arc"></div>
+        </article>
       </section>
     </main>
   </div>
