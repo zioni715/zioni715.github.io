@@ -200,15 +200,41 @@
       color: #c5f1ff;
     }
     .contact-icon {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       color: #6fe3ff;
-      font-size: 0.95rem;
-      font-weight: 700;
+      font-size: 1.2rem;
       line-height: 1;
+    }
+    .profile__affiliations {
+      display: grid;
+      gap: 0.55rem;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .profile__affiliation {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.55rem 0.85rem;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #d9f4ff;
+      font-size: 0.88rem;
+      line-height: 1.3;
+      justify-content: center;
+    }
+    .affiliation-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      padding: 4px;
     }
     .profile__work {
       display: grid;
@@ -408,7 +434,16 @@
         <div class="profile__top">
           <div class="avatar"><img src="/assets/images/230056042.jpeg" alt="Son Jiwon"></div>
           <h2 class="profile__name">SON JIWON</h2>
-          <img class="profile__logo" src="/assets/images/zioni_pic.png" alt="Logo">
+          <div class="profile__affiliations">
+            <div class="profile__affiliation">
+              <img class="affiliation-logo" src="/assets/images/KICT_CI.jpg" alt="KICT">
+              <span>Student Researcher, KICT</span>
+            </div>
+            <div class="profile__affiliation">
+              <img class="affiliation-logo" src="/assets/images/yonsei.png" alt="Yonsei University">
+              <span>M.S. Student, Yonsei University</span>
+            </div>
+          </div>
           <div class="profile__work">
             <h3 class="profile__work-title">What I'm working on now</h3>
             <img class="profile__work-image" src="/assets/images/research-hero.png" alt="Research overview placeholder">
@@ -442,15 +477,15 @@
           <p class="contact-block__title">Contact Me</p>
           <div class="contact-items">
             <a class="contact-item" href="mailto:jennysiw715557@gmail.com">
-              <span class="contact-button"><span class="contact-icon">G</span></span>
+              <span class="contact-button"><span class="contact-icon">✉️</span></span>
               <span class="contact-label">Gmail</span>
             </a>
             <a class="contact-item" href="mailto:jennysiw715557@yonsei.ac.kr">
-              <span class="contact-button"><span class="contact-icon">Y</span></span>
+              <span class="contact-button"><span class="contact-icon">✉️</span></span>
               <span class="contact-label">Yonsei</span>
             </a>
             <a class="contact-item" href="mailto:jennysiw715557@kict.re.kr">
-              <span class="contact-button"><span class="contact-icon">K</span></span>
+              <span class="contact-button"><span class="contact-icon">✉️</span></span>
               <span class="contact-label">KICT</span>
             </a>
           </div>
