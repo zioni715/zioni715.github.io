@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Paper / Publication"
-permalink: /research/
+permalink: /paper-publication/
 author_profile: true
 ---
 
