@@ -1,6 +1,6 @@
 ---
 layout: null
-title: "Jiwon's Website"
+title: "Son Jiwon"
 permalink: /
 author_profile: false
 sidebar: false
@@ -28,4 +28,3 @@ sidebar: false
     </div>
   </div>
 </section>
-

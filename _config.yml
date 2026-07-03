@@ -1,6 +1,6 @@
-title: "Jiwon's Website"
-name: "Jiwon's Website"
-description: "Jiwon's Website – construction document automation and smart infrastructure research."
+title: "Son Jiwon"
+name: "Son Jiwon"
+description: "Construction site automation and construction document automation researcher."
 locale: "ko-KR"
 
 url: "https://zioni715.github.io"
@@ -19,7 +19,7 @@ plugins:
 author:
   name   : "SON JIWON"
   avatar : "/assets/images/230056042.jpeg"
-  bio    : "건설 환경에 적용할 수 있는 스마트 인프라 시스템을 연구합니다."
+  bio    : "Construction site automation and construction document automation researcher."
   location: "Republic of Korea"
   links:
     - label: "GitHub"
