@@ -202,6 +202,84 @@
       word-break: keep-all;
     }
 
+    .research-detail {
+      min-width: 0;
+    }
+
+    .research-detail summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: start;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .research-detail summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .detail-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding-top: 4px;
+      color: var(--yonsei);
+      font-size: 0.82rem;
+      font-weight: 740;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .detail-action::after {
+      width: 18px;
+      height: 18px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(0, 56, 118, 0.24);
+      border-radius: 50%;
+      content: "+";
+      font-size: 0.95rem;
+      font-weight: 520;
+    }
+
+    .research-detail[open] .detail-action::after {
+      content: "-";
+    }
+
+    .repo-link {
+      width: fit-content;
+      max-width: 100%;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--yonsei);
+      font-size: 0.92rem;
+      font-weight: 740;
+      line-height: 1;
+    }
+
+    .repo-icon {
+      width: 38px;
+      height: 38px;
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 50%;
+      background: #fff;
+      color: #1d1d1f;
+    }
+
+    .repo-icon svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
+    }
+
     @media (max-width: 860px) {
       h1 {
         font-size: 3.5rem;
@@ -229,6 +307,15 @@
       .research-item {
         grid-template-columns: 1fr;
         gap: 8px;
+      }
+
+      .research-detail summary {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .detail-action {
+        padding-top: 0;
       }
     }
   </style>
@@ -272,7 +359,20 @@
           </article>
           <article class="research-item">
             <span class="research-number">02</span>
-            <h3>Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Construction Progress Payment Documents</h3>
+            <details class="research-detail">
+              <summary>
+                <h3>Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Construction Progress Payment Documents</h3>
+                <span class="detail-action">View details</span>
+              </summary>
+              <a class="repo-link" href="https://github.com/zioni715/Reinforced_Concrete_Ontology_Construction.git" target="_blank" rel="noopener noreferrer">
+                <span class="repo-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" focusable="false">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.55 7.55 0 0 1 8 3.86c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+                  </svg>
+                </span>
+                <span>Github Repo</span>
+              </a>
+            </details>
           </article>
           <article class="research-item">
             <span class="research-number">03</span>

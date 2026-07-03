@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project | Son Jiwon</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f5f5f7;
+      --surface: #ffffff;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --soft: #9aa3ad;
+      --line: rgba(0, 0, 0, 0.08);
+      --line-strong: rgba(0, 0, 0, 0.14);
+      --yonsei: #003876;
+      --kict: #f29a16;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Noto Sans KR", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(245, 245, 247, 0.82);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      backdrop-filter: saturate(180%) blur(18px);
+    }
+
+    .header-inner {
+      width: min(1120px, calc(100% - 44px));
+      height: 48px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      width: 38px;
+      height: 38px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 50%;
+      background: #fff;
+      color: var(--yonsei);
+      line-height: 1;
+    }
+
+    .brand svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #424245;
+      font-size: 0.78rem;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .nav a {
+      opacity: 0.92;
+      transition: color 160ms ease, opacity 160ms ease;
+    }
+
+    .nav a[aria-current="page"],
+    .nav a:hover,
+    .nav a:focus-visible {
+      color: var(--yonsei);
+      opacity: 1;
+      outline: none;
+    }
+
+    main {
+      padding: 82px 22px 110px;
+    }
+
+    .page-shell {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: grid;
+      gap: 42px;
+    }
+
+    .page-hero {
+      display: grid;
+      gap: 18px;
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: var(--soft);
+      font-size: 0.8rem;
+      font-weight: 760;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 4.6rem;
+      line-height: 1.03;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.12rem;
+      font-weight: 500;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    .project-board {
+      display: grid;
+      gap: 0;
+      padding-top: 34px;
+      border-top: 1px solid var(--line-strong);
+    }
+
+    .project-section {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 40px;
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project-section:first-child {
+      padding-top: 0;
+    }
+
+    .project-section:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .section-title {
+      margin: 0;
+      color: var(--yonsei);
+      font-size: 1.12rem;
+      font-weight: 760;
+      line-height: 1.35;
+    }
+
+    .project-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .project-item {
+      display: grid;
+      grid-template-columns: 108px minmax(0, 1fr);
+      gap: 28px;
+      padding: 20px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .project-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .period {
+      color: var(--soft);
+      font-size: 0.86rem;
+      font-weight: 760;
+      line-height: 1.45;
+    }
+
+    .project-body {
+      display: grid;
+      gap: 8px;
+    }
+
+    .project-body h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.18rem;
+      font-weight: 730;
+      line-height: 1.45;
+      letter-spacing: 0;
+    }
+
+    .project-body p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+      font-weight: 500;
+      line-height: 1.65;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-top: 4px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 10px;
+      border: 1px solid rgba(0, 56, 118, 0.14);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--yonsei);
+      font-size: 0.76rem;
+      font-weight: 720;
+      line-height: 1;
+    }
+
+    .empty-note {
+      margin: 0;
+      color: var(--soft);
+      font-size: 0.98rem;
+      font-weight: 650;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 860px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      .project-section {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      main {
+        padding: 58px 18px 88px;
+      }
+
+      .header-inner {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav {
+        gap: 15px;
+        overflow-x: auto;
+      }
+
+      h1 {
+        font-size: 2.76rem;
+      }
+
+      .project-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Go to home">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M3 10.7 12 3l9 7.7"></path>
+          <path d="M5.5 9.8V21h13V9.8"></path>
+        </svg>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/about/">About</a>
+        <a href="/research/">Research</a>
+        <a href="/paper-publication/">Publication</a>
+        <a href="/project/" aria-current="page">Project</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-shell">
+      <section class="page-hero" aria-labelledby="project-title">
+        <p class="eyebrow">Project</p>
+        <h1 id="project-title">Project Archive</h1>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
