@@ -1,0 +1,35 @@
+name: Update blog posts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-blog-posts
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Fetch RSS feeds
+        run: python3 scripts/fetch_blog_posts.py
+
+      - name: Commit updated posts
+        run: |
+          if git diff --quiet -- data/blog-posts.json; then
+            echo "Blog posts are already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/blog-posts.json
+          git commit -m "chore: update blog posts"
+          git push

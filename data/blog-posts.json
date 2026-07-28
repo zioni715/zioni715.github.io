@@ -1,0 +1,271 @@
+{
+  "updatedAt": "2026-07-28T23:06:28.412179+00:00",
+  "velog": [
+    {
+      "title": "[Paper Review]LOT: An Industrial oriented ontology engineering framework",
+      "link": "https://velog.io/@hamzzi_lover/Paper-ReviewLOT-An-Industrial-oriented-ontology-engineering-framework",
+      "date": "2026-07-28T09:31:14+00:00",
+      "timestamp": 1785231074000,
+      "description": "Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology...",
+      "source": "Velog"
+    },
+    {
+      "title": "[Paper Review] An Introduction to Convolutional Neural Networks",
+      "link": "https://velog.io/@hamzzi_lover/Paper-Review-An-Introduction-to-Convolutional-Neural-Networks",
+      "date": "2026-05-19T08:29:04+00:00",
+      "timestamp": 1779179344000,
+      "description": "O’Shea, K., & Nash, R. (2015). An Introduction to Convolutional Neural Networks . http://arxiv.org/abs/1511.08458 Convolutional Neur...",
+      "source": "Velog"
+    },
+    {
+      "title": "[CM] 기성•공정 관련 서류",
+      "link": "https://velog.io/@hamzzi_lover/CM-%EA%B8%B0%EC%84%B1%EA%B3%B5%EC%A0%95-%EA%B4%80%EB%A0%A8-%EC%84%9C%EB%A5%98",
+      "date": "2026-04-07T00:40:45+00:00",
+      "timestamp": 1775522445000,
+      "description": "[기성] 1. 정의 전체 공사 내용 중 특정 시점까지 이미 완료된 공사량(진척도 또는 공정률)을 의미 2. 기성검사 계약자가 계약의 일부를 이행하면 계약서, 설계서, 그 밖의 관계 서류에 따라 기성검사를 받는다. ( ⌈국가를 당사자로 하...",
+      "source": "Velog"
+    },
+    {
+      "title": "[Paper Review] Knowledge Graphs",
+      "link": "https://velog.io/@hamzzi_lover/Paper-Review-Knowledge-Graphs",
+      "date": "2026-03-26T05:36:14+00:00",
+      "timestamp": 1774503374000,
+      "description": "1. KG의 정의 A graph of data intended to accumulate and convey knowledge of the real world, whose nodes represent entities of interest...",
+      "source": "Velog"
+    },
+    {
+      "title": "[Paper Review] A Survey on Knowledge Graphs: Representation, Acquisition and Applications(KRL Part)",
+      "link": "https://velog.io/@hamzzi_lover/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-A-Survey-on-Knowledge-Graphs-Representation-Acquisition-and-ApplicationsKRL-Part",
+      "date": "2026-03-13T02:02:01+00:00",
+      "timestamp": 1773367321000,
+      "description": "[KNOWLEDGE REPRESENTATION LEARNING] A. Representation Space 1. Point-Wise Space 대표 모델 1 : TransE h + r ≈ t : h 에서 r 만큼 이동하면 t 근처에 와야...",
+      "source": "Velog"
+    },
+    {
+      "title": "[Paper Review] Automatic Inference of Standard BOQ(Bill of Quantities) Items using BIM an Ontology",
+      "link": "https://velog.io/@hamzzi_lover/Paper-Review-Automatic-Inference-of-Standard-BOQBill-of-Quantities-Items-using-BIM-an-Ontology",
+      "date": "2026-03-12T01:30:21+00:00",
+      "timestamp": 1773279021000,
+      "description": "[Ontology] 1. Semantic Web 기계가 이해할 수 있는 의미(semantic)를 지닌 정보의 웹 정보에 대하여 기계가 이해할 수 있는 형태로 의미를 정의 각 정보가 의미로써 관례를 맺게 함으로 인간 대신 기계가 이해하고...",
+      "source": "Velog"
+    },
+    {
+      "title": "논문 리뷰 - Digital Twins in the Construction Industry: A Comprehensive Review of Current Implementations, Enabling Technologies, and Future Directions",
+      "link": "https://velog.io/@hamzzi_lover/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-Digital-Twins-in-the-Construction-Industry-A-Comprehensive-Review-of-Current-Implementations-Enabling-Technologies-and-Future-Directions",
+      "date": "2025-12-29T05:01:29+00:00",
+      "timestamp": 1766984489000,
+      "description": "🧾 Paper Info Title : Digital Twins in the Construction Industry: A Comprehensive Review of Current Implementations, Enabling Technol...",
+      "source": "Velog"
+    },
+    {
+      "title": "Windows & VS Code 환경에서 Flutter 개발 환경 구축하기",
+      "link": "https://velog.io/@hamzzi_lover/Windows-VS-Code-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Flutter-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0",
+      "date": "2025-12-23T08:40:15+00:00",
+      "timestamp": 1766479215000,
+      "description": "Windows에서 Flutter 개발환경 구축(VS Code 기준) 1. 준비물 ✅ 권장 환경 Windows 10/11 64-bit 저장공간 여유(최소 수 GB 이상 권장) ✅ 설치 경로 원칙 공백/한글/특수문자/OneDrive 동기화...",
+      "source": "Velog"
+    },
+    {
+      "title": "⚙️환경설정-Failed to initialize NVML: GPU access blocked by the operating system",
+      "link": "https://velog.io/@hamzzi_lover/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-Failed-to-initialize-NVML-GPU-access-blocked-by-the-operating-system",
+      "date": "2025-11-30T03:09:02+00:00",
+      "timestamp": 1764472142000,
+      "description": "🚨 오류 발생 🐧 WSL : Failed to initialize NVML: GPU access blocked by >the operating system 0. 🐹내 환경 OS : Windows (RTX 4060 노트북) GPU : NV...",
+      "source": "Velog"
+    },
+    {
+      "title": "⚙️환경설정-딥러닝 스택 버전 맞추기",
+      "link": "https://velog.io/@hamzzi_lover/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EC%8A%A4%ED%83%9D-%EB%B2%84%EC%A0%84-%EB%A7%9E%EC%B6%94%EA%B8%B0",
+      "date": "2025-11-29T09:22:04+00:00",
+      "timestamp": 1764408124000,
+      "description": "0. 전체 프레임 GPU & 하드웨어 GPU 모델, VRAM 용량, Compute Capability CUDA & 드라이버 레벨 NVIDIA Display Driver (Windows) CUDA Driver (드라이버에 포함) (필요 시...",
+      "source": "Velog"
+    },
+    {
+      "title": "⚙️환경설정-[여담]노트북 사양",
+      "link": "https://velog.io/@hamzzi_lover/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-%EC%97%AC%EB%8B%B4%EB%85%B8%ED%8A%B8%EB%B6%81-%EC%82%AC%EC%96%91",
+      "date": "2025-11-25T15:55:29+00:00",
+      "timestamp": 1764086129000,
+      "description": "NOVA 1기 노트북 사양 💻 작업용 노트북 사양 정리 ⚙️ 기본 정보 🏷 장치 이름 : DESKTOP-BGELFKJ 💻 모델명 : Katana 17 B13VFK 🪟 운영체제 : Windows (64bit, x64 기반) 🧠 CPU &...",
+      "source": "Velog"
+    },
+    {
+      "title": "⚙️환경설정-CUDA 설치 및 세팅",
+      "link": "https://velog.io/@hamzzi_lover/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-CUDA-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%84%B8%ED%8C%85",
+      "date": "2025-11-25T15:37:08+00:00",
+      "timestamp": 1764085028000,
+      "description": "🐹 0. 표기 규칙 (어디서 명령어를 치는지) 💻 Windows (PowerShell / CMD) 🐧 WSL Ubuntu 터미널 시작 메뉴에서 “Ubuntu” 실행한 창 혹은 VS Code에서 연 WSL: Ubuntu 통합 터미널 🧩 V...",
+      "source": "Velog"
+    },
+    {
+      "title": "⚙️환경설정-Ubuntu-24.04 초기 세팅",
+      "link": "https://velog.io/@hamzzi_lover/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-Ubuntu-24.04-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85",
+      "date": "2025-11-25T15:35:03+00:00",
+      "timestamp": 1764084903000,
+      "description": "1. 시스템 업데이트 sudo apt update && sudo apt upgrade ➡️ 시스템 패키지 목록 최신화 및 설치된 모든 패키지 업그레이드 2. root 계정 활성화 sudo passwd root ➡️ root 계정은 기본적...",
+      "source": "Velog"
+    },
+    {
+      "title": "⚙️환경설정-WSL설치",
+      "link": "https://velog.io/@hamzzi_lover/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-WSL%EC%84%A4%EC%B9%98",
+      "date": "2025-11-25T15:30:15+00:00",
+      "timestamp": 1764084615000,
+      "description": "1. Windows 기능 활성화 1) Linux 용 Windows 하위 시스템 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /no...",
+      "source": "Velog"
+    },
+    {
+      "title": "인공지능을 위한 선형대수 - 1️⃣기초",
+      "link": "https://velog.io/@hamzzi_lover/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98-1%EA%B8%B0%EC%B4%88",
+      "date": "2025-11-25T15:07:17+00:00",
+      "timestamp": 1764083237000,
+      "description": "1. Scalar, Vector, and Matrix 1) Scalar a single number $s \\in \\mathbb{R}$ 2) Vector an ordered list of numbers $\\mathbf{x} = \\begin...",
+      "source": "Velog"
+    }
+  ],
+  "naver": [
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 13주차(11/17~11/21)",
+      "link": "https://blog.naver.com/wowgiroong_715/224116431142?fromRss=true&trackingCode=rss",
+      "date": "2025-12-20T12:36:17+09:00",
+      "timestamp": 1766201777000,
+      "description": "할 일 부자 데스... 25.11.17 인공지능과 이미지 처리 [CUDA를 설치해 보아요!] 1. 이미지 분류 파이프라인 (CIFAR-10) 데이터 준비 핵심 load_data()로 train/test를 받고, 이미지 픽셀값은 보통 0~...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 12주차(11/10~11/14)",
+      "link": "https://blog.naver.com/wowgiroong_715/224116393210?fromRss=true&trackingCode=rss",
+      "date": "2025-12-20T11:47:55+09:00",
+      "timestamp": 1766198875000,
+      "description": "그렇다.... 25.11.10 음성 데이터를 활용한 성능 개선 실습 과제 안내 & 실습 진행 [LLM 활용 실습] 1. STT 후처리로 성능 높이기 디코더에서 이전 단어를 기반으로 다음 단어를 예측하는 것도 동작하기 때문에 할루시네이션...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 11주차(11/3~11/7)",
+      "link": "https://blog.naver.com/wowgiroong_715/224093018548?fromRss=true&trackingCode=rss",
+      "date": "2025-11-30T13:00:22+09:00",
+      "timestamp": 1764475222000,
+      "description": "쓰~꺼얼~~ 오늘의 각오 : 집에 '각오' 싶다 ️25.11.03 인터넷 검색을 활용해 답변하는 챗봇 만들기 & 로컬에서 딥시크-R1 모델 사용하기 & 랭그래프와 친해지기 & 랭그래프를 활용한 멀티에이전트 RAG 만들기 1. 핵심 포인트...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 10주차(10/27~10/31)",
+      "link": "https://blog.naver.com/wowgiroong_715/224086793542?fromRss=true&trackingCode=rss",
+      "date": "2025-11-24T21:40:34+09:00",
+      "timestamp": 1763988034000,
+      "description": "이제 짤 고르는 것조차 HIM이 들어 진짜 HIM을 주세요 ️25.10.27 파이토치 텐서 & 신경망 0. 소개 ▪️파이토치는 딥러닝 분야에서 텐서를 다루기 위한 기본 도구 1. 텐서 만들기 ▪️파이토치 사용 2. 넘파이로 텐서 만들기...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 9주차(10/20~10/24)",
+      "link": "https://blog.naver.com/wowgiroong_715/224070455500?fromRss=true&trackingCode=rss",
+      "date": "2025-11-10T02:11:57+09:00",
+      "timestamp": 1762708317000,
+      "description": "할마에 처럼 살기 1일차... 목쑴 걸고! 난데없는 코딩 ️25.10.20 날짜와 시간 다루기 & 이미지 다루기 0. 소개 ◼ 종단적 데이터(longtiudinal data) 또는 시계열 데이터(time series data)는 동일한...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 8주차(10/13~10/17)",
+      "link": "https://blog.naver.com/wowgiroong_715/224054918541?fromRss=true&trackingCode=rss",
+      "date": "2025-10-27T09:10:35+09:00",
+      "timestamp": 1761523835000,
+      "description": "모든 DOG 피곤하기만 합니다. 진짜 이번주 내내 이 표정으로 지냄 Yo... 구아아아악 ️ 25.10.13 ~ 25.10.14 프로젝트 디벨롭 깃허브 진짜 이눔시키 너무 어렵다 공동작업하기엔 좋지만 익숙해지는데 너무 오래걸린다.. 친해...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 7주차(10/6~10/10)",
+      "link": "https://blog.naver.com/wowgiroong_715/224045469964?fromRss=true&trackingCode=rss",
+      "date": "2025-10-18T14:35:08+09:00",
+      "timestamp": 1760765708000,
+      "description": "열흘간의 휴가 MAN 추석이니까 다른 건 없고 프로젝트에 대해서 써볼까 한다! 첫 술에 배부를 수 없듯이 첫 프로젝트에 완벽히 할 수 없다. 이걸로 얻어가는 것이 하나라도 있다면 성공 izi~ 아직 배운 것도, 아는 것도 많이 없어서 결...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 6주차(9/29~10/2)",
+      "link": "https://blog.naver.com/wowgiroong_715/224038692616?fromRss=true&trackingCode=rss",
+      "date": "2025-10-12T18:30:28+09:00",
+      "timestamp": 1760261428000,
+      "description": "뭐 했다구 벌써 10월... 내 나이 2n.8세... 우울하지만 그래두 기다리던 10일 휴가다ㅠㅠㅠㅠㅠ 쪼아쪼아쪼아쪼아 X 이나큼(요즘 쪼유준이 이나큼에 빠져있음 ㅠㅠ) ️25.09.29 대시보드 개발 발표 및 웹스크롤링 예고없이 한 발...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 5주차(9/22~9/26)",
+      "link": "https://blog.naver.com/wowgiroong_715/224025395288?fromRss=true&trackingCode=rss",
+      "date": "2025-09-29T09:57:47+09:00",
+      "timestamp": 1759107467000,
+      "description": "코딩.. Yes I Can ️25.09.22 파이썬과 MySQL 연동 1. 파이썬과 MySQL의 연동 (1) 파이썬에서 데이터 입력 ▪️MySQL 연결하기 ▪️커서 생성하기 ▪️테이블 만들기 ▪️데이터 입력하기 ▪️입력한 데이터 저장하기...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 4주차(9/15~9/19)",
+      "link": "https://blog.naver.com/wowgiroong_715/224016649723?fromRss=true&trackingCode=rss",
+      "date": "2025-09-21T22:45:13+09:00",
+      "timestamp": 1758462313000,
+      "description": "가을 냄새 넘나리 좋아부러.. 그리고 가을은 말이 아닌 내가 살찌는 계절 ️25.09.15 데이터 시각화 & Python 더 알아보기 1. 데이터 시각화 소개 (1) 선형차트 ▪️시간에 흐름에 따른 데이터 변화를 나타낼 때 적당 ▪️선...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 3주차(9/8~9/12)",
+      "link": "https://blog.naver.com/wowgiroong_715/224008127364?fromRss=true&trackingCode=rss",
+      "date": "2025-09-15T02:49:25+09:00",
+      "timestamp": 1757872165000,
+      "description": "해라 \\n 코딩은... \\n 그 뭐냐... \\n 그거다. ️25.09.08 판다스를 활용한 데이터 전처리 1. 결측치 개념 (1) 결측치 개념 ▪️데이터에 값이 없는 것 ▪️데이터 분석의 정확도를 높이기 위해서는 결측치를 삭제하거나 0...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 2주차(9/1~9/5)",
+      "link": "https://blog.naver.com/wowgiroong_715/223997462792?fromRss=true&trackingCode=rss",
+      "date": "2025-09-06T12:26:01+09:00",
+      "timestamp": 1757129161000,
+      "description": "이번 주 지침 이슈, 피곤 이슈, 배고픈 이슈 ️25.09.01 1교시~4교시 : 실무를 위한 데이터 과학 기초 1. 데이터 과학의 목표 및 실무 활용 사례 (1) 데이터 과학 ▪️비즈니스에 대한 인사이트를 추출하기 위한 데이터 연구 ▪...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "BEAKJOON - 2525번 문제",
+      "link": "https://blog.naver.com/wowgiroong_715/223994194983?fromRss=true&trackingCode=rss",
+      "date": "2025-09-03T20:37:55+09:00",
+      "timestamp": 1756899475000,
+      "description": "백준 - 조건문 2525번 문제 문제 : KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간편하게 만드는 인공지능 오븐을 개발하려고 한다. 인공지능 오븐을 사용하는 방법은 적당한 양의 오리 훈제 재료를 인공지능 오븐에 넣으면 된...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "BEAKJOON - 2884번 문제",
+      "link": "https://blog.naver.com/wowgiroong_715/223994180169?fromRss=true&trackingCode=rss",
+      "date": "2025-09-03T20:22:08+09:00",
+      "timestamp": 1756898528000,
+      "description": "백준 - 조건문 2884번 문제 문제 : 상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다. 상근이는 모든 방법을 동원해보았지만, 조금만 더...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "BEAKJOON - 2753번 문제",
+      "link": "https://blog.naver.com/wowgiroong_715/223994169303?fromRss=true&trackingCode=rss",
+      "date": "2025-09-03T20:10:30+09:00",
+      "timestamp": 1756897830000,
+      "description": "백준 - 조건문 2753번 문제 문제 : 연도가 주어졌을 때, 윤년이면 1, 아니면 0을 출력하는 프로그램을 작성하시오. 윤년은 연도가 4의 배수이면서, 100의 배수가 아닐 때 또는 400의 배수일 때이다. 예를 들어, 2012년은 4...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "BEAK JOON - 1000번 문제",
+      "link": "https://blog.naver.com/wowgiroong_715/223994160859?fromRss=true&trackingCode=rss",
+      "date": "2025-09-03T20:01:36+09:00",
+      "timestamp": 1756897296000,
+      "description": "백준 - 입출력과 사칙연산 1000번 문제 문제 : 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 입력 : 첫째 줄에 A와 B가 주어진다. (0 < A, B <10) 출력 : 첫째 줄에 A+B를 출력한다....",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "BEAK JOON - 10171번 문제",
+      "link": "https://blog.naver.com/wowgiroong_715/223994151419?fromRss=true&trackingCode=rss",
+      "date": "2025-09-03T19:51:25+09:00",
+      "timestamp": 1756896685000,
+      "description": "백준_입출력과 사칙연산 10171번 문제 문제 : 아래 예제와 같이 고양이를 출력하시오. 입력 : 없음 출력 : 고양이를 출력한다. 정답 ⬇ 예제 출력 * 여기서 주의할 점! 역슬래시(\\)는 코드 입력 시 한 번만 입력하면 안되고 두 번...",
+      "source": "Naver Blog"
+    },
+    {
+      "title": "️ HDC 랩스 - NOVA 1기 1주차(8/26~8/29)",
+      "link": "https://blog.naver.com/wowgiroong_715/223990118040?fromRss=true&trackingCode=rss",
+      "date": "2025-08-31T20:31:48+09:00",
+      "timestamp": 1756639908000,
+      "description": "️ 25.08.26 1교시~4교시 : HDC 랩스에서 진행 중인 프로젝트 소개 및 AIoT개론 1. NLP (Natural Language Processing, 자연어처리) ▪️STT(Speech-to-Text, 음성인식) : 음성을 텍...",
+      "source": "Naver Blog"
+    }
+  ]
+}
