@@ -59,7 +59,9 @@ function renderPosts() {
     </a>
   `).join('');
 
-  statusElement.textContent = `${allPosts.length} posts loaded`;
+  const velogCount = allPosts.filter((post) => post.source === 'Velog').length;
+  const naverCount = allPosts.filter((post) => post.source === 'Naver Blog').length;
+  statusElement.textContent = `${allPosts.length} posts loaded · Velog ${velogCount} · Naver Blog ${naverCount}`;
 }
 
 async function loadFeeds() {
@@ -68,7 +70,7 @@ async function loadFeeds() {
   statusElement.textContent = 'Loading posts...';
 
   try {
-    const response = await fetch('/data/blog-posts.json', { cache: 'no-store' });
+    const response = await fetch('/data/blog-posts.json?v=20260729-1', { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
