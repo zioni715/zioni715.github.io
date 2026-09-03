@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-07-28T23:06:28.412179+00:00",
+  "updatedAt": "2026-09-03T04:37:52.193775+00:00",
   "velog": [
+    {
+      "title": "[Paper Review] Document-Level Tabular Numerical Cross-Checking: A Coarse-to-Fine Approach",
+      "link": "https://velog.io/@hamzzi_lover/Paper-Review-Document-Level-Tabular-Numerical-Cross-Checking-A-Coarse-to-Fine-Approach",
+      "date": "2026-09-03T04:24:48+00:00",
+      "timestamp": 1788409488000,
+      "description": "Pang, C., Cao, Y., Zhou, G., Li, H., & Luo, P. (2025). Document-Level Tabular Numerical Cross-Checking: A Coarse-to-Fine Approach. h...",
+      "source": "Velog"
+    },
     {
       "title": "[Paper Review]LOT: An Industrial oriented ontology engineering framework",
       "link": "https://velog.io/@hamzzi_lover/Paper-ReviewLOT-An-Industrial-oriented-ontology-engineering-framework",
