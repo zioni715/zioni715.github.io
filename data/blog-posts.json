@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T04:37:52.193775+00:00",
+  "updatedAt": "2026-09-11T04:46:34.871115+00:00",
   "velog": [
     {
       "title": "[Paper Review] Document-Level Tabular Numerical Cross-Checking: A Coarse-to-Fine Approach",
@@ -134,24 +134,24 @@
     {
       "title": "️ HDC 랩스 - NOVA 1기 13주차(11/17~11/21)",
       "link": "https://blog.naver.com/wowgiroong_715/224116431142?fromRss=true&trackingCode=rss",
-      "date": "2025-12-20T12:36:17+09:00",
-      "timestamp": 1766201777000,
+      "date": "2025-12-20T12:36:16+09:00",
+      "timestamp": 1766201776000,
       "description": "할 일 부자 데스... 25.11.17 인공지능과 이미지 처리 [CUDA를 설치해 보아요!] 1. 이미지 분류 파이프라인 (CIFAR-10) 데이터 준비 핵심 load_data()로 train/test를 받고, 이미지 픽셀값은 보통 0~...",
       "source": "Naver Blog"
     },
     {
       "title": "️ HDC 랩스 - NOVA 1기 12주차(11/10~11/14)",
       "link": "https://blog.naver.com/wowgiroong_715/224116393210?fromRss=true&trackingCode=rss",
-      "date": "2025-12-20T11:47:55+09:00",
-      "timestamp": 1766198875000,
+      "date": "2025-12-20T11:47:54+09:00",
+      "timestamp": 1766198874000,
       "description": "그렇다.... 25.11.10 음성 데이터를 활용한 성능 개선 실습 과제 안내 & 실습 진행 [LLM 활용 실습] 1. STT 후처리로 성능 높이기 디코더에서 이전 단어를 기반으로 다음 단어를 예측하는 것도 동작하기 때문에 할루시네이션...",
       "source": "Naver Blog"
     },
     {
       "title": "️ HDC 랩스 - NOVA 1기 11주차(11/3~11/7)",
       "link": "https://blog.naver.com/wowgiroong_715/224093018548?fromRss=true&trackingCode=rss",
-      "date": "2025-11-30T13:00:22+09:00",
-      "timestamp": 1764475222000,
+      "date": "2025-11-30T13:00:21+09:00",
+      "timestamp": 1764475221000,
       "description": "쓰~꺼얼~~ 오늘의 각오 : 집에 '각오' 싶다 ️25.11.03 인터넷 검색을 활용해 답변하는 챗봇 만들기 & 로컬에서 딥시크-R1 모델 사용하기 & 랭그래프와 친해지기 & 랭그래프를 활용한 멀티에이전트 RAG 만들기 1. 핵심 포인트...",
       "source": "Naver Blog"
     },
@@ -166,16 +166,16 @@
     {
       "title": "️ HDC 랩스 - NOVA 1기 9주차(10/20~10/24)",
       "link": "https://blog.naver.com/wowgiroong_715/224070455500?fromRss=true&trackingCode=rss",
-      "date": "2025-11-10T02:11:57+09:00",
-      "timestamp": 1762708317000,
+      "date": "2025-11-10T02:11:56+09:00",
+      "timestamp": 1762708316000,
       "description": "할마에 처럼 살기 1일차... 목쑴 걸고! 난데없는 코딩 ️25.10.20 날짜와 시간 다루기 & 이미지 다루기 0. 소개 ◼ 종단적 데이터(longtiudinal data) 또는 시계열 데이터(time series data)는 동일한...",
       "source": "Naver Blog"
     },
     {
       "title": "️ HDC 랩스 - NOVA 1기 8주차(10/13~10/17)",
       "link": "https://blog.naver.com/wowgiroong_715/224054918541?fromRss=true&trackingCode=rss",
-      "date": "2025-10-27T09:10:35+09:00",
-      "timestamp": 1761523835000,
+      "date": "2025-10-27T09:10:34+09:00",
+      "timestamp": 1761523834000,
       "description": "모든 DOG 피곤하기만 합니다. 진짜 이번주 내내 이 표정으로 지냄 Yo... 구아아아악 ️ 25.10.13 ~ 25.10.14 프로젝트 디벨롭 깃허브 진짜 이눔시키 너무 어렵다 공동작업하기엔 좋지만 익숙해지는데 너무 오래걸린다.. 친해...",
       "source": "Naver Blog"
     },
@@ -198,8 +198,8 @@
     {
       "title": "️ HDC 랩스 - NOVA 1기 5주차(9/22~9/26)",
       "link": "https://blog.naver.com/wowgiroong_715/224025395288?fromRss=true&trackingCode=rss",
-      "date": "2025-09-29T09:57:47+09:00",
-      "timestamp": 1759107467000,
+      "date": "2025-09-29T09:57:46+09:00",
+      "timestamp": 1759107466000,
       "description": "코딩.. Yes I Can ️25.09.22 파이썬과 MySQL 연동 1. 파이썬과 MySQL의 연동 (1) 파이썬에서 데이터 입력 ▪️MySQL 연결하기 ▪️커서 생성하기 ▪️테이블 만들기 ▪️데이터 입력하기 ▪️입력한 데이터 저장하기...",
       "source": "Naver Blog"
     },
@@ -222,8 +222,8 @@
     {
       "title": "️ HDC 랩스 - NOVA 1기 2주차(9/1~9/5)",
       "link": "https://blog.naver.com/wowgiroong_715/223997462792?fromRss=true&trackingCode=rss",
-      "date": "2025-09-06T12:26:01+09:00",
-      "timestamp": 1757129161000,
+      "date": "2025-09-06T12:26:00+09:00",
+      "timestamp": 1757129160000,
       "description": "이번 주 지침 이슈, 피곤 이슈, 배고픈 이슈 ️25.09.01 1교시~4교시 : 실무를 위한 데이터 과학 기초 1. 데이터 과학의 목표 및 실무 활용 사례 (1) 데이터 과학 ▪️비즈니스에 대한 인사이트를 추출하기 위한 데이터 연구 ▪...",
       "source": "Naver Blog"
     },
