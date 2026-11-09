@@ -22,13 +22,14 @@
     .detail-header { margin-bottom: 36px; }
     .conference { margin: 0 0 14px; color: var(--yonsei); font-size: .82rem; font-weight: 760; text-transform: uppercase; }
     h2 { margin: 0; color: var(--ink); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 720; line-height: 1.45; letter-spacing: -0.01em; }
-    .presentation-details { margin-bottom: 36px; padding: 28px; border: 1px solid var(--line); background: var(--paper); }
+    .presentation-details { margin-bottom: 36px; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
     .details-heading, .content-heading, .visual-heading { margin: 0; color: var(--ink); font-size: 1rem; font-weight: 760; line-height: 1.45; }
     .details-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; margin: 20px 0 0; }
     .details-grid div { min-width: 0; }
     .details-grid dt { margin: 0 0 5px; color: #8b96a4; font-size: .72rem; font-weight: 760; letter-spacing: .04em; text-transform: uppercase; }
     .details-grid dd { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.6; }
-    .content-block { margin-top: 30px; }
+    .poster-narrative { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 42px; margin-top: 42px; padding-top: 34px; border-top: 1px solid var(--line); }
+    .content-block { margin: 0; }
     .content-block p { margin: 10px 0 0; color: var(--muted); font-size: .92rem; line-height: 1.75; }
     .content-block ul { display: grid; gap: 9px; margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: .92rem; line-height: 1.7; }
     .visual-heading { margin-bottom: 14px; }
@@ -36,8 +37,8 @@
     .poster-frame img { width: 100%; height: auto; display: block; }
     @media (max-width: 560px) {
       main { padding: 42px 14px 70px; }
-      .presentation-details { padding: 20px; }
       .details-grid { grid-template-columns: 1fr; gap: 14px; }
+      .poster-narrative { grid-template-columns: 1fr; gap: 30px; }
       .poster-frame { padding: 8px; }
     }
   </style>
@@ -59,6 +60,12 @@
       <section class="presentation-details" id="presentation-details" aria-labelledby="details-title" hidden>
         <h3 class="details-heading" id="details-title">Presentation Details</h3>
         <dl class="details-grid" id="details-grid"></dl>
+      </section>
+      <h3 class="visual-heading" id="poster-visual-title" hidden>Poster</h3>
+      <div class="poster-frame">
+        <img id="poster-image" src="" alt="">
+      </div>
+      <section class="poster-narrative" id="poster-narrative" aria-label="Poster overview and findings" hidden>
         <div class="content-block">
           <h3 class="content-heading">Overview</h3>
           <p id="poster-overview"></p>
@@ -68,10 +75,6 @@
           <ul id="poster-findings"></ul>
         </div>
       </section>
-      <h3 class="visual-heading" id="poster-visual-title" hidden>Poster</h3>
-      <div class="poster-frame">
-        <img id="poster-image" src="" alt="">
-      </div>
     </article>
   </main>
 
@@ -82,8 +85,7 @@
         title: "[CDE 2026] Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Progress Payment Documents in Reinforced Concrete Work",
         image: "/assets/posters/2026/cde-ontology.webp",
         details: {
-          authors: "Jiwon Son, Insu Jung*",
-          correspondingAuthor: "Insu Jung",
+          authors: "Jiwon Son, Insu Jung (Corresponding author)",
           event: "2026 Korea CDE Society Summer Conference",
           date: "August 19–22, 2026",
           location: "Jeju Booyoung Hotel & Resort, Jeju, Republic of Korea",
@@ -101,8 +103,7 @@
         title: "[KSCE 2026 Convention] A Knowledge Graph-Based Automation Framework for Construction Progress and Schedule Management",
         image: "/assets/posters/2026/knowledge-graph-schedule.webp",
         details: {
-          authors: "Jiwon Son, Insu Jung, Hongjo Kim, Changjun Lee*",
-          correspondingAuthor: "Changjun Lee",
+          authors: "Jiwon Son, Insu Jung, Hongjo Kim, Changjun Lee (Corresponding author)",
           event: "KSCE 2026 Convention Conference & Civil Expo",
           date: "October 21–23, 2026",
           location: "High1 Resort, Gangwon, Republic of Korea",
@@ -133,7 +134,6 @@
     if (poster.details) {
       const detailItems = [
         ["Authors", poster.details.authors],
-        ["Corresponding Author", poster.details.correspondingAuthor],
         ["Conference", poster.details.event],
         ["Date", poster.details.date],
         ["Location", poster.details.location],
@@ -159,6 +159,7 @@
       });
       document.getElementById("presentation-details").hidden = false;
       document.getElementById("poster-visual-title").hidden = false;
+      document.getElementById("poster-narrative").hidden = false;
     }
   </script>
 </body>

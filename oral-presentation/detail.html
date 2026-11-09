@@ -22,12 +22,13 @@
     .detail-header { margin-bottom: 36px; }
     .conference { margin: 0 0 14px; color: var(--yonsei); font-size: .82rem; font-weight: 760; text-transform: uppercase; }
     h2 { margin: 0; color: var(--ink); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 720; line-height: 1.45; letter-spacing: -.01em; }
-    .presentation-details { margin-bottom: 36px; padding: 28px; border: 1px solid var(--line); background: var(--paper); }
+    .presentation-details { margin-bottom: 36px; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
     .details-heading, .content-heading, .slides-heading { margin: 0; color: var(--ink); font-size: 1rem; font-weight: 760; line-height: 1.45; }
     .details-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; margin: 20px 0 0; }
     .details-grid dt { margin: 0 0 5px; color: #8b96a4; font-size: .72rem; font-weight: 760; letter-spacing: .04em; text-transform: uppercase; }
     .details-grid dd { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.6; }
-    .content-block { margin-top: 30px; }
+    .oral-narrative { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 42px; margin: 42px 0; padding: 34px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .content-block { margin: 0; }
     .content-block p { margin: 10px 0 0; color: var(--muted); font-size: .92rem; line-height: 1.75; }
     .content-block ul { display: grid; gap: 9px; margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: .92rem; line-height: 1.7; }
     .slides-heading { margin-bottom: 14px; }
@@ -38,8 +39,8 @@
     @media (max-width: 560px) {
       main { padding: 42px 14px 70px; }
       .header-inner { width: min(100% - 28px, 1120px); }
-      .presentation-details { padding: 20px; }
       .details-grid { grid-template-columns: 1fr; gap: 14px; }
+      .oral-narrative { grid-template-columns: 1fr; gap: 30px; }
       .slide-list { gap: 16px; }
       .slide-frame { padding: 6px; }
     }
@@ -62,14 +63,16 @@
       <section class="presentation-details" aria-labelledby="oral-details-title">
         <h3 class="details-heading" id="oral-details-title">Presentation Details</h3>
         <dl class="details-grid">
-          <div><dt>Authors</dt><dd>Jiwon Son, Insu Jung*</dd></div>
-          <div><dt>Corresponding Author</dt><dd>Insu Jung</dd></div>
+          <div><dt>Authors</dt><dd>Jiwon Son, Insu Jung (Corresponding author)</dd></div>
           <div><dt>Presenter</dt><dd>Jiwon Son</dd></div>
           <div><dt>Conference</dt><dd>Korea Institute of Construction Engineering and Management (KICEM) 2026 Annual Conference</dd></div>
           <div><dt>Presentation Date</dt><dd>November 5, 2026</dd></div>
           <div><dt>Location</dt><dd>The Ocean Resort, Yeosu, Republic of Korea</dd></div>
           <div><dt>Type</dt><dd>Oral Presentation</dd></div>
         </dl>
+      </section>
+      <section class="slide-list" id="featured-slide" aria-label="Presentation title slide"></section>
+      <section class="oral-narrative" aria-label="Presentation overview and findings">
         <div class="content-block">
           <h3 class="content-heading">Overview</h3>
           <p>This study proposes a model for extending a construction cost-estimation and progress-payment document ontology from one trade to another. Using an ontology developed for reinforced-concrete work as the source structure, the model extracts and aligns concepts from tile-work documents, identifies extension candidates, and places them within the ontology using document evidence and WBS hierarchy information.</p>
@@ -84,7 +87,7 @@
         </div>
       </section>
       <h3 class="slides-heading">Presentation Slides</h3>
-      <section class="slide-list" id="slide-list" aria-label="Presentation slides"></section>
+      <section class="slide-list" id="slide-list" aria-label="Presentation slides 2 through 17"></section>
     </article>
   </main>
 
@@ -96,6 +99,7 @@
     };
 
     document.title = `${presentation.title} | Son Jiwon`;
+    const featuredSlide = document.getElementById("featured-slide");
     const slideList = document.getElementById("slide-list");
     for (let index = 1; index <= presentation.slideCount; index += 1) {
       const number = String(index).padStart(2, "0");
@@ -112,7 +116,7 @@
       caption.textContent = `${index} / ${presentation.slideCount}`;
 
       figure.append(image, caption);
-      slideList.appendChild(figure);
+      (index === 1 ? featuredSlide : slideList).appendChild(figure);
     }
   </script>
 </body>
