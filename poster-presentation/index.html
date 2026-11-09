@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Poster Presentations | Son Jiwon</title>
   <style>
     :root {
@@ -178,8 +181,8 @@
 
       <section class="year-panel" id="posters-2026" aria-label="2026 poster presentations">
         <div class="presentation-grid" aria-label="2026 poster presentations">
-          <article class="presentation-card" data-order="1">
-            <a href="/poster-presentation/detail.html?poster=fi-rst-2026&amp;v=2">
+          <article class="presentation-card" data-order="1" data-recency="3">
+            <a href="/poster-presentation/detail.html?poster=fi-rst-2026&amp;v=3">
               <div class="poster-preview"><img src="/assets/posters/2026/fi-rst-consistency.webp" alt="FI-RST 2026 poster preview"></div>
               <div class="card-body">
                 <p class="card-meta">FI-RST 2026</p>
@@ -187,8 +190,8 @@
               </div>
             </a>
           </article>
-          <article class="presentation-card" data-order="2">
-            <a href="/poster-presentation/detail.html?poster=ksce-2026&amp;v=2">
+          <article class="presentation-card" data-order="2" data-recency="2">
+            <a href="/poster-presentation/detail.html?poster=ksce-2026&amp;v=3">
               <div class="poster-preview"><img src="/assets/posters/2026/knowledge-graph-schedule.webp" alt="KSCE 2026 Convention poster preview"></div>
               <div class="card-body">
                 <p class="card-meta">KSCE 2026 Convention</p>
@@ -196,8 +199,8 @@
               </div>
             </a>
           </article>
-          <article class="presentation-card" data-order="3">
-            <a href="/poster-presentation/detail.html?poster=cde-2026&amp;v=2">
+          <article class="presentation-card" data-order="3" data-recency="1">
+            <a href="/poster-presentation/detail.html?poster=cde-2026&amp;v=3">
               <div class="poster-preview"><img src="/assets/posters/2026/cde-ontology.webp" alt="CDE 2026 poster preview"></div>
               <div class="card-body">
                 <p class="card-meta">CDE 2026</p>
@@ -209,5 +212,11 @@
       </section>
     </div>
   </main>
+  <script>
+    const posterGrid = document.querySelector(".presentation-grid");
+    [...posterGrid.children]
+      .sort((a, b) => Number(b.dataset.recency) - Number(a.dataset.recency))
+      .forEach((card) => posterGrid.appendChild(card));
+  </script>
 </body>
 </html>
