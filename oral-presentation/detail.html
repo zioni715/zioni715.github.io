@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oral Presentation | Son Jiwon</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f4f7fb; --paper: #fff; --ink: #202632; --line: #d7e1ee; --yonsei: #003876;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Noto Sans KR", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--page); color: var(--ink); }
+    a { color: inherit; text-decoration: none; }
+    .site-header { position: sticky; top: 0; z-index: 20; background: rgba(245,245,247,.86); border-bottom: 1px solid rgba(0,0,0,.06); backdrop-filter: saturate(180%) blur(18px); }
+    .header-inner { width: min(1120px, calc(100% - 44px)); height: 48px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .brand { color: var(--yonsei); font-size: .78rem; font-weight: 760; }
+    .back-link { color: var(--yonsei); font-size: .82rem; font-weight: 720; }
+    main { padding: 64px 22px 90px; }
+    .detail-shell { width: min(900px, 100%); margin: 0 auto; }
+    .detail-header { margin-bottom: 36px; }
+    .conference { margin: 0 0 14px; color: var(--yonsei); font-size: .82rem; font-weight: 760; text-transform: uppercase; }
+    h2 { margin: 0; color: var(--ink); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 720; line-height: 1.45; letter-spacing: -.01em; }
+    .slide-list { display: grid; gap: 24px; }
+    .slide-frame { margin: 0; padding: 12px; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 16px 42px rgba(0,56,118,.08); }
+    .slide-frame img { width: 100%; height: auto; display: block; }
+    .slide-frame figcaption { padding: 10px 2px 0; color: #7d8795; font-size: .75rem; font-weight: 650; text-align: right; }
+    @media (max-width: 560px) {
+      main { padding: 42px 14px 70px; }
+      .header-inner { width: min(100% - 28px, 1120px); }
+      .slide-list { gap: 16px; }
+      .slide-frame { padding: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Son Jiwon</a>
+      <a class="back-link" href="/oral-presentation/">← Oral Presentations</a>
+    </div>
+  </header>
+
+  <main>
+    <article class="detail-shell">
+      <header class="detail-header">
+        <p class="conference">KICEM 2026 Annual Conference</p>
+        <h2>[KICEM 2026 Annual Conference] Development of a Cross-Trade Extension Model for an Ontology of Construction Cost Estimation and Progress Payment Documents</h2>
+      </header>
+      <section class="slide-list" id="slide-list" aria-label="Presentation slides"></section>
+    </article>
+  </main>
+
+  <script>
+    const presentation = {
+      title: "[KICEM 2026 Annual Conference] Development of a Cross-Trade Extension Model for an Ontology of Construction Cost Estimation and Progress Payment Documents",
+      directory: "/assets/oral-presentations/2026/kicem-ontology-extension",
+      slideCount: 17
+    };
+
+    document.title = `${presentation.title} | Son Jiwon`;
+    const slideList = document.getElementById("slide-list");
+    for (let index = 1; index <= presentation.slideCount; index += 1) {
+      const number = String(index).padStart(2, "0");
+      const figure = document.createElement("figure");
+      figure.className = "slide-frame";
+
+      const image = document.createElement("img");
+      image.src = `${presentation.directory}/slide-${number}.webp`;
+      image.alt = `${presentation.title}, slide ${index}`;
+      image.loading = index === 1 ? "eager" : "lazy";
+      image.decoding = "async";
+
+      const caption = document.createElement("figcaption");
+      caption.textContent = `${index} / ${presentation.slideCount}`;
+
+      figure.append(image, caption);
+      slideList.appendChild(figure);
+    }
+  </script>
+</body>
+</html>
