@@ -372,6 +372,43 @@
       word-break: keep-all;
     }
 
+    .paper-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 12px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(0, 56, 118, 0.28);
+      color: var(--yonsei);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .award-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .award-list > li {
+      padding-left: 4px;
+      color: var(--ink);
+    }
+
+    .award-title {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 760;
+      line-height: 1.55;
+    }
+
+    .award-citation {
+      margin: 18px 0 0 24px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.75;
+      word-break: keep-all;
+    }
+
     .research-list {
       display: grid;
       gap: 16px;
@@ -588,23 +625,29 @@
 
         <section class="section" aria-labelledby="publication-title">
           <h2 class="section-title" id="publication-title">Publications</h2>
+          <div class="timeline">
+            <article class="item">
+              <span class="period">2022</span>
+              <div class="item-body">
+                <h3><a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11194329" target="_blank" rel="noopener noreferrer">고밀도 식당에서 바이러스 감염률 예측 모델을 이용한 환기 제안에 관한 연구</a></h3>
+                <p>
+                  오동근 · 정민철 · 조현상 · 손지원 · 이재우 · 김지민<br>
+                  <em>대한설비공학회 학술발표대회논문집</em>, 437–440
+                </p>
+                <a class="paper-link" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11194329" target="_blank" rel="noopener noreferrer" aria-label="논문 원문 새 창에서 보기">논문 <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section class="section" aria-labelledby="award-title">
           <h2 class="section-title" id="award-title">Awards</h2>
-          <div class="timeline">
-            <article class="item">
-              <span class="period">2026</span>
-              <div class="item-body">
-                <h3>우수논문상</h3>
-                <p>
-                  건설공사 비용산정 기성서류 온톨로지의 공종 간 확장 모델 개발<br>
-                  - 철근콘크리트공종에서 타일공종으로의 확장을 중심으로 -<br>
-                  Korea Institute of Construction Engineering and Management (KICEM) Annual Conference
-                </p>
-              </div>
-            </article>
-          </div>
+          <ul class="award-list">
+            <li>
+              <p class="award-title">우수논문상 (한국건설관리학회 2026 정기학술발표대회)</p>
+              <p class="award-citation">손지원, 정인수. (2026). “건설공사 비용산정 기성서류 온톨로지의 공종 간 확장 모델 개발: 철근콘크리트공종에서 타일공종으로의 확장을 중심으로.” <em>한국건설관리학회 2026 정기학술발표대회</em>.</p>
+            </li>
+          </ul>
         </section>
 
         <section class="section" aria-labelledby="work-project-title">

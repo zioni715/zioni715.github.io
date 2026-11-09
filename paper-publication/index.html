@@ -235,6 +235,70 @@
       outline: none;
     }
 
+    .publication-section {
+      scroll-margin-top: 76px;
+    }
+
+    .section-heading {
+      margin: 0 0 22px;
+      color: var(--yonsei);
+      font-size: 1rem;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+
+    .publication-list {
+      border-top: 1px solid var(--line-strong);
+    }
+
+    .publication-item {
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      gap: 28px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .publication-year {
+      color: var(--soft);
+      font-size: .88rem;
+      font-weight: 760;
+    }
+
+    .publication-content {
+      min-width: 0;
+    }
+
+    .publication-content h2 {
+      margin: 0;
+      font-size: 1.22rem;
+      font-weight: 740;
+      line-height: 1.5;
+      word-break: keep-all;
+    }
+
+    .publication-authors,
+    .publication-venue {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: .94rem;
+      line-height: 1.65;
+    }
+
+    .publication-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 18px;
+      color: var(--yonsei);
+      font-size: .82rem;
+      font-weight: 740;
+    }
+
+    .publication-link::after {
+      margin-left: 6px;
+      content: "↗";
+    }
+
     @media (max-width: 860px) {
       h1 {
         font-size: 3.5rem;
@@ -258,6 +322,11 @@
 
       h1 {
         font-size: 2.76rem;
+      }
+
+      .publication-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
       }
 
     }
@@ -300,6 +369,21 @@
         <a class="publication-tab" href="#domestic" aria-current="page">Domestic</a>
         <a class="publication-tab" href="#international">International</a>
       </nav>
+
+      <section class="publication-section" id="domestic" aria-labelledby="domestic-title">
+        <h2 class="section-heading" id="domestic-title">Domestic Publications</h2>
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-year">2022</div>
+            <div class="publication-content">
+              <h2>고밀도 식당에서 바이러스 감염률 예측 모델을 이용한 환기 제안에 관한 연구</h2>
+              <p class="publication-authors">오동근 · 정민철 · 조현상 · 손지원 · 이재우 · 김지민</p>
+              <p class="publication-venue"><em>대한설비공학회 학술발표대회논문집</em>, 437–440</p>
+              <a class="publication-link" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11194329" target="_blank" rel="noopener noreferrer" aria-label="논문 원문 새 창에서 보기">논문</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
   </main>
 </body>
