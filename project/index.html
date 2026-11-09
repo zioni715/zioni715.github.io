@@ -91,6 +91,74 @@
       transition: color 160ms ease, opacity 160ms ease;
     }
 
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .nav-dropdown-toggle {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .nav-dropdown-toggle::after {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin: 0 0 3px 7px;
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+      content: "";
+      transform: rotate(135deg);
+      transition: transform 160ms ease;
+    }
+
+    .nav-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 16px);
+      left: -24px;
+      z-index: 30;
+      width: 210px;
+      padding: 12px;
+      display: grid;
+      gap: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      box-shadow: 0 18px 45px rgba(0, 56, 118, 0.14);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-6px);
+      transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+    }
+
+    .nav-dropdown-menu a {
+      padding: 12px;
+      color: #424245;
+      font-size: 0.84rem;
+      line-height: 1.3;
+      white-space: normal;
+    }
+
+    .nav-dropdown-menu a:hover,
+    .nav-dropdown-menu a:focus-visible {
+      background: #f4f7fb;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .nav-dropdown:hover .nav-dropdown-toggle::after,
+    .nav-dropdown:focus-within .nav-dropdown-toggle::after {
+      transform: rotate(-45deg);
+    }
+
     .nav a[aria-current="page"],
     .nav a:hover,
     .nav a:focus-visible {
@@ -299,8 +367,14 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="/about/">About</a>
-        <a href="/research/">Research</a>
-        <a href="/paper-publication/">Publication</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-haspopup="true">Research</button>
+          <div class="nav-dropdown-menu">
+            <a href="/research/">Research Projects</a>
+            <a href="/paper-publication/">Publications</a>
+            <a href="/research/#poster-presentations">Poster Presentations</a>
+          </div>
+        </div>
         <a href="/project/" aria-current="page">Project</a>
         <a href="/blog/">Blog</a>
       </nav>

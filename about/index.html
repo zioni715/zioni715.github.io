@@ -96,6 +96,74 @@
       transition: color 160ms ease, opacity 160ms ease;
     }
 
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .nav-dropdown-toggle {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .nav-dropdown-toggle::after {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin: 0 0 3px 7px;
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+      content: "";
+      transform: rotate(135deg);
+      transition: transform 160ms ease;
+    }
+
+    .nav-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 16px);
+      left: -24px;
+      z-index: 30;
+      width: 210px;
+      padding: 12px;
+      display: grid;
+      gap: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      box-shadow: 0 18px 45px rgba(0, 56, 118, 0.14);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-6px);
+      transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+    }
+
+    .nav-dropdown-menu a {
+      padding: 12px;
+      color: #424245;
+      font-size: 0.84rem;
+      line-height: 1.3;
+      white-space: normal;
+    }
+
+    .nav-dropdown-menu a:hover,
+    .nav-dropdown-menu a:focus-visible {
+      background: #f4f7fb;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .nav-dropdown:hover .nav-dropdown-toggle::after,
+    .nav-dropdown:focus-within .nav-dropdown-toggle::after {
+      transform: rotate(-45deg);
+    }
+
     .nav a[aria-current="page"],
     .nav a:hover,
     .nav a:focus-visible {
@@ -389,8 +457,14 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="/about/" aria-current="page">About</a>
-        <a href="/research/">Research</a>
-        <a href="/paper-publication/">Publication</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-haspopup="true">Research</button>
+          <div class="nav-dropdown-menu">
+            <a href="/research/">Research Projects</a>
+            <a href="/paper-publication/">Publications</a>
+            <a href="/research/#poster-presentations">Poster Presentations</a>
+          </div>
+        </div>
         <a href="/project/">Project</a>
         <a href="/blog/">Blog</a>
       </nav>
@@ -504,12 +578,6 @@
           <h2 class="section-title" id="research-title">Current Research Projects</h2>
           <ul class="research-list">
             <li><span>01</span>Cross-Document Information Consistency Verification for Construction Progress Payment Documents</li>
-            <li><span>02</span>Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Construction Progress Payment Documents</li>
-            <li><span>03</span>Development of an Automated Framework for Construction Progress Payment Document Generation</li>
-            <li><span>04</span>Development of a Knowledge Graph-Based Framework for Automated Construction Schedule Management</li>
-            <li><span>05</span>Progress Payment Risk Management for Project Owners</li>
-            <li><span>06</span>Development of a Hybrid Model for Ontology Construction of Reinforced Concrete Progress Payment Bill of Quantities</li>
-            <li><span>07</span>Development of an Ontology for Reinforced Concrete Works</li>
           </ul>
         </section>
 
@@ -519,6 +587,19 @@
 
         <section class="section" aria-labelledby="publication-title">
           <h2 class="section-title" id="publication-title">Publications</h2>
+        </section>
+
+        <section class="section" aria-labelledby="award-title">
+          <h2 class="section-title" id="award-title">Awards</h2>
+          <div class="timeline">
+            <article class="item">
+              <span class="period">2026</span>
+              <div class="item-body">
+                <h3>우수논문상</h3>
+                <p>“건설공사 비용산정 기성서류 온톨로지의 공종 간 확장 모델 개발 - 철근콘크리트공종에서 타일공종으로의 확장을 중심으로 -,” Korea Institute of Construction Engineering and Management (KICEM) Annual Conference</p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section class="section" aria-labelledby="work-project-title">

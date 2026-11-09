@@ -91,6 +91,74 @@
       transition: color 160ms ease, opacity 160ms ease;
     }
 
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .nav-dropdown-toggle {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .nav-dropdown-toggle::after {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin: 0 0 3px 7px;
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+      content: "";
+      transform: rotate(135deg);
+      transition: transform 160ms ease;
+    }
+
+    .nav-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 16px);
+      left: -24px;
+      z-index: 30;
+      width: 210px;
+      padding: 12px;
+      display: grid;
+      gap: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      box-shadow: 0 18px 45px rgba(0, 56, 118, 0.14);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-6px);
+      transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+    }
+
+    .nav-dropdown-menu a {
+      padding: 12px;
+      color: #424245;
+      font-size: 0.84rem;
+      line-height: 1.3;
+      white-space: normal;
+    }
+
+    .nav-dropdown-menu a:hover,
+    .nav-dropdown-menu a:focus-visible {
+      background: #f4f7fb;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .nav-dropdown:hover .nav-dropdown-toggle::after,
+    .nav-dropdown:focus-within .nav-dropdown-toggle::after {
+      transform: rotate(-45deg);
+    }
+
     .nav a[aria-current="page"],
     .nav a:hover,
     .nav a:focus-visible {
@@ -114,6 +182,29 @@
       display: grid;
       gap: 18px;
       max-width: 860px;
+    }
+
+    .archive-section + .archive-section {
+      margin-top: 30px;
+    }
+
+    .archive-title {
+      margin: 0 0 24px;
+      color: var(--ink);
+      font-size: 1.5rem;
+      font-weight: 760;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+    }
+
+    .archive-empty {
+      margin: 0;
+      padding: 28px 0;
+      border-top: 1px solid var(--line-strong);
+      border-bottom: 1px solid var(--line);
+      color: var(--soft);
+      font-size: 0.9rem;
+      line-height: 1.6;
     }
 
     .eyebrow {
@@ -325,8 +416,14 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="/about/">About</a>
-        <a href="/research/" aria-current="page">Research</a>
-        <a href="/paper-publication/">Publication</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-current="page">Research</button>
+          <div class="nav-dropdown-menu">
+            <a href="/research/" aria-current="page">Research Projects</a>
+            <a href="/paper-publication/">Publications</a>
+            <a href="/research/#poster-presentations">Poster Presentations</a>
+          </div>
+        </div>
         <a href="/project/">Project</a>
         <a href="/blog/">Blog</a>
       </nav>
@@ -340,68 +437,43 @@
         <h1 id="research-title">Research Archive</h1>
       </section>
 
-      <nav class="year-tabs" aria-label="Research archive by year">
-        <a class="year-tab" href="#research-2026" aria-current="page">2026</a>
-      </nav>
+      <section class="archive-section" aria-labelledby="projects-title">
+        <h2 class="archive-title" id="projects-title">Research Projects</h2>
+        <nav class="year-tabs" aria-label="Research projects by year">
+          <a class="year-tab" href="#research-2026" aria-current="page">2026</a>
+        </nav>
 
-      <section class="year-panel" id="research-2026" aria-labelledby="research-2026-title">
-        <h2 class="year-heading" id="research-2026-title">2026</h2>
-        <div class="research-list">
-          <article class="research-item">
-            <span class="research-number">01</span>
-            <h3>Cross-Document Information Consistency Verification for Construction Progress Payment Documents</h3>
-          </article>
-          <article class="research-item">
-            <span class="research-number">02</span>
-            <details class="research-detail">
-              <summary>
-                <h3>Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Construction Progress Payment Documents</h3>
-                <span class="detail-action">View details</span>
-              </summary>
-              <a class="repo-link" href="https://github.com/zioni715/Reinforced_Concrete_Ontology_Construction.git" target="_blank" rel="noopener noreferrer">
-                <span class="repo-icon" aria-hidden="true">
-                  <svg viewBox="0 0 16 16" focusable="false">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.55 7.55 0 0 1 8 3.86c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
-                  </svg>
-                </span>
-                <span>Github Repo</span>
-              </a>
-            </details>
-          </article>
-          <article class="research-item">
-            <span class="research-number">03</span>
-            <h3>Development of an Automated Framework for Construction Progress Payment Document Generation</h3>
-          </article>
-          <article class="research-item">
-            <span class="research-number">04</span>
-            <h3>Development of a Knowledge Graph-Based Framework for Automated Construction Schedule Management</h3>
-          </article>
-          <article class="research-item">
-            <span class="research-number">05</span>
-            <h3>Progress Payment Risk Management for Project Owners</h3>
-          </article>
-          <article class="research-item">
-            <span class="research-number">06</span>
-            <details class="research-detail">
-              <summary>
-                <h3>Development of a Hybrid Model for Ontology Construction of Reinforced Concrete Progress Payment Bill of Quantities</h3>
-                <span class="detail-action">View details</span>
-              </summary>
-              <a class="repo-link" href="https://github.com/zioni715/Ontology_Hybrid_Model.git" target="_blank" rel="noopener noreferrer">
-                <span class="repo-icon" aria-hidden="true">
-                  <svg viewBox="0 0 16 16" focusable="false">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.55 7.55 0 0 1 8 3.86c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
-                  </svg>
-                </span>
-                <span>Github Repo</span>
-              </a>
-            </details>
-          </article>
-          <article class="research-item">
-            <span class="research-number">07</span>
-            <h3>Development of an Ontology for Reinforced Concrete Works</h3>
-          </article>
-        </div>
+        <section class="year-panel" id="research-2026" aria-labelledby="research-2026-title">
+          <h3 class="year-heading" id="research-2026-title">2026</h3>
+          <div class="research-list">
+            <article class="research-item">
+              <span class="research-number">01</span>
+              <div class="research-detail">
+                <h3>Cross-Document Information Consistency Verification for Construction Progress Payment Documents</h3>
+                <a class="repo-link" href="https://github.com/zioni715/Information_Consistency_Verification.git" target="_blank" rel="noopener noreferrer">
+                  <span class="repo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" focusable="false">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.55 7.55 0 0 1 8 3.86c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+                    </svg>
+                  </span>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="archive-section" id="poster-presentations" aria-labelledby="posters-title">
+        <h2 class="archive-title" id="posters-title">Poster Presentations</h2>
+        <nav class="year-tabs" aria-label="Poster presentations by year">
+          <a class="year-tab" href="#posters-2026" aria-current="page">2026</a>
+        </nav>
+
+        <section class="year-panel" id="posters-2026" aria-labelledby="posters-2026-title">
+          <h3 class="year-heading" id="posters-2026-title">2026</h3>
+          <p class="archive-empty">5 poster presentations</p>
+        </section>
       </section>
     </div>
   </main>
