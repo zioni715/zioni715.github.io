@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Presentation | Son Jiwon</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f4f7fb; --paper: #fff; --ink: #202632; --muted: #626d7c; --line: #d7e1ee; --yonsei: #003876;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Noto Sans KR", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--page); color: var(--ink); }
+    a { color: inherit; text-decoration: none; }
+    .site-header { position: sticky; top: 0; z-index: 20; background: rgba(245,245,247,.86); border-bottom: 1px solid rgba(0,0,0,.06); backdrop-filter: saturate(180%) blur(18px); }
+    .header-inner { width: min(1120px, calc(100% - 44px)); height: 48px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .brand { color: var(--yonsei); font-size: .78rem; font-weight: 760; }
+    .back-link { color: var(--yonsei); font-size: .82rem; font-weight: 720; }
+    main { padding: 64px 22px 90px; }
+    .detail-shell { width: min(900px, 100%); margin: 0 auto; }
+    .detail-header { margin-bottom: 36px; }
+    .conference { margin: 0 0 14px; color: var(--yonsei); font-size: .82rem; font-weight: 760; text-transform: uppercase; }
+    h1 { margin: 0; color: var(--ink); font-size: clamp(2rem, 5vw, 3.7rem); font-weight: 760; line-height: 1.12; letter-spacing: -.025em; }
+    .poster-frame { padding: 18px; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 20px 55px rgba(0,56,118,.1); }
+    .poster-frame img { width: 100%; height: auto; display: block; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    .action-link { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; padding: 0 18px; border: 1px solid rgba(0,56,118,.24); color: var(--yonsei); font-size: .84rem; font-weight: 740; }
+    .post-content { min-height: 80px; margin-top: 42px; padding-top: 32px; border-top: 1px solid var(--line); color: var(--muted); line-height: 1.75; }
+    @media (max-width: 560px) { main { padding: 42px 14px 70px; } .poster-frame { padding: 8px; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Son Jiwon</a>
+      <a class="back-link" href="/poster-presentation/">← Poster Presentations</a>
+    </div>
+  </header>
+
+  <main>
+    <article class="detail-shell">
+      <header class="detail-header">
+        <p class="conference" id="poster-conference"></p>
+        <h1 id="poster-title">Poster Presentation</h1>
+      </header>
+      <div class="poster-frame">
+        <img id="poster-image" src="" alt="">
+      </div>
+      <div class="actions">
+        <a class="action-link" id="poster-pdf" href="" target="_blank" rel="noopener noreferrer">View PDF</a>
+      </div>
+      <section class="post-content" aria-label="Poster presentation details">
+        <!-- Add post content here. -->
+      </section>
+    </article>
+  </main>
+
+  <script>
+    const posters = {
+      "cde-2026": {
+        conference: "CDE 2026",
+        title: "[CDE 2026] Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Progress Payment Documents in Reinforced Concrete Work",
+        image: "/assets/posters/2026/cde-ontology.webp",
+        pdf: "/assets/posters/2026/cde-ontology.pdf"
+      },
+      "ksce-2026": {
+        conference: "KSCE 2026 Convention",
+        title: "[KSCE 2026 Convention] A Knowledge Graph-Based Automation Framework for Construction Progress and Schedule Management",
+        image: "/assets/posters/2026/knowledge-graph-schedule.webp",
+        pdf: "/assets/posters/2026/knowledge-graph-schedule.pdf"
+      },
+      "fi-rst-2026": {
+        conference: "FI-RST 2026",
+        title: "[FI-RST 2026] An Entity Matching-Based Modular Framework for Numerical Consistency Verification Across Heterogeneous Construction Progress Payment Documents",
+        image: "/assets/posters/2026/fi-rst-consistency.webp",
+        pdf: "/assets/posters/2026/fi-rst-consistency.pdf"
+      }
+    };
+
+    const key = new URLSearchParams(window.location.search).get("poster");
+    const poster = posters[key] || posters["cde-2026"];
+    document.title = `${poster.title} | Son Jiwon`;
+    document.getElementById("poster-conference").textContent = poster.conference;
+    document.getElementById("poster-title").textContent = poster.title;
+    document.getElementById("poster-image").src = poster.image;
+    document.getElementById("poster-image").alt = `${poster.conference} poster`;
+    document.getElementById("poster-pdf").href = poster.pdf;
+  </script>
+</body>
+</html>
