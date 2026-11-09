@@ -22,10 +22,24 @@
     .detail-header { margin-bottom: 36px; }
     .conference { margin: 0 0 14px; color: var(--yonsei); font-size: .82rem; font-weight: 760; text-transform: uppercase; }
     h2 { margin: 0; color: var(--ink); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 720; line-height: 1.45; letter-spacing: -0.01em; }
+    .presentation-details { margin-bottom: 36px; padding: 28px; border: 1px solid var(--line); background: var(--paper); }
+    .details-heading, .content-heading, .visual-heading { margin: 0; color: var(--ink); font-size: 1rem; font-weight: 760; line-height: 1.45; }
+    .details-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; margin: 20px 0 0; }
+    .details-grid div { min-width: 0; }
+    .details-grid dt { margin: 0 0 5px; color: #8b96a4; font-size: .72rem; font-weight: 760; letter-spacing: .04em; text-transform: uppercase; }
+    .details-grid dd { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.6; }
+    .content-block { margin-top: 30px; }
+    .content-block p { margin: 10px 0 0; color: var(--muted); font-size: .92rem; line-height: 1.75; }
+    .content-block ul { display: grid; gap: 9px; margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: .92rem; line-height: 1.7; }
+    .visual-heading { margin-bottom: 14px; }
     .poster-frame { padding: 18px; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 20px 55px rgba(0,56,118,.1); }
     .poster-frame img { width: 100%; height: auto; display: block; }
-    .post-content { min-height: 80px; margin-top: 42px; padding-top: 32px; border-top: 1px solid var(--line); color: var(--muted); line-height: 1.75; }
-    @media (max-width: 560px) { main { padding: 42px 14px 70px; } .poster-frame { padding: 8px; } }
+    @media (max-width: 560px) {
+      main { padding: 42px 14px 70px; }
+      .presentation-details { padding: 20px; }
+      .details-grid { grid-template-columns: 1fr; gap: 14px; }
+      .poster-frame { padding: 8px; }
+    }
   </style>
 </head>
 <body>
@@ -42,12 +56,22 @@
         <p class="conference" id="poster-conference"></p>
         <h2 id="poster-title">Poster Presentation</h2>
       </header>
+      <section class="presentation-details" id="presentation-details" aria-labelledby="details-title" hidden>
+        <h3 class="details-heading" id="details-title">Presentation Details</h3>
+        <dl class="details-grid" id="details-grid"></dl>
+        <div class="content-block">
+          <h3 class="content-heading">Overview</h3>
+          <p id="poster-overview"></p>
+        </div>
+        <div class="content-block">
+          <h3 class="content-heading">Key Findings</h3>
+          <ul id="poster-findings"></ul>
+        </div>
+      </section>
+      <h3 class="visual-heading" id="poster-visual-title" hidden>Poster</h3>
       <div class="poster-frame">
         <img id="poster-image" src="" alt="">
       </div>
-      <section class="post-content" aria-label="Poster presentation details">
-        <!-- Add post content here. -->
-      </section>
     </article>
   </main>
 
@@ -56,12 +80,38 @@
       "cde-2026": {
         conference: "CDE 2026",
         title: "[CDE 2026] Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Progress Payment Documents in Reinforced Concrete Work",
-        image: "/assets/posters/2026/cde-ontology.webp"
+        image: "/assets/posters/2026/cde-ontology.webp",
+        details: {
+          authors: "Jiwon Son, Insu Jung",
+          event: "2026 Korea CDE Society Summer Conference",
+          date: "August 19–22, 2026",
+          location: "Jeju Booyoung Hotel & Resort, Jeju, Republic of Korea",
+          type: "Poster Presentation",
+          overview: "Construction progress payment information is distributed across multiple documents, making relationships and calculation evidence difficult to trace consistently. This study compares RDF-based ontology representation approaches for semantically structuring reinforced-concrete progress payment documents and supporting reliable cross-document information retrieval.",
+          findings: [
+            "Defined seven core classes covering documents, line items, work types, specifications, costs, evidence, and processes.",
+            "Compared five representation approaches using SPARQL reference results and 30 natural-language queries evaluated through an LLM.",
+            "RDF + RDFS + OWL 2 DL provided the most stable representation of document components and their relationships under the study's evaluation criteria."
+          ]
+        }
       },
       "ksce-2026": {
         conference: "KSCE 2026 Convention",
         title: "[KSCE 2026 Convention] A Knowledge Graph-Based Automation Framework for Construction Progress and Schedule Management",
-        image: "/assets/posters/2026/knowledge-graph-schedule.webp"
+        image: "/assets/posters/2026/knowledge-graph-schedule.webp",
+        details: {
+          authors: "Jiwon Son, Insu Jung, Hongjo Kim, Changjun Lee",
+          event: "KSCE 2026 Convention Conference & Civil Expo",
+          date: "October 21–23, 2026",
+          location: "High1 Resort, Gangwon, Republic of Korea",
+          type: "Poster Presentation",
+          overview: "Construction progress and schedule information is commonly dispersed across schedules, daily reports, site photographs, and meeting records. This study proposes a knowledge graph-based automation framework that connects planning, performance, evidence, delay causes, and response actions around a work breakdown structure.",
+          findings: [
+            "Structures heterogeneous progress-management documents as traceable entities and relationships centered on the WBS.",
+            "Combines document collection, information extraction, WBS mapping, knowledge graph construction, and AI-agent utilization in a single workflow.",
+            "Supports evidence-based progress calculation and delayed-activity assessment while reducing repetitive manual document review."
+          ]
+        }
       },
       "fi-rst-2026": {
         conference: "FI-RST 2026",
@@ -77,6 +127,36 @@
     document.getElementById("poster-title").textContent = poster.title;
     document.getElementById("poster-image").src = poster.image;
     document.getElementById("poster-image").alt = `${poster.conference} poster`;
+
+    if (poster.details) {
+      const detailItems = [
+        ["Authors", poster.details.authors],
+        ["Conference", poster.details.event],
+        ["Date", poster.details.date],
+        ["Location", poster.details.location],
+        ["Type", poster.details.type]
+      ];
+      const detailsGrid = document.getElementById("details-grid");
+      detailItems.forEach(([label, value]) => {
+        const wrapper = document.createElement("div");
+        const term = document.createElement("dt");
+        const description = document.createElement("dd");
+        term.textContent = label;
+        description.textContent = value;
+        wrapper.append(term, description);
+        detailsGrid.appendChild(wrapper);
+      });
+
+      document.getElementById("poster-overview").textContent = poster.details.overview;
+      const findings = document.getElementById("poster-findings");
+      poster.details.findings.forEach((finding) => {
+        const item = document.createElement("li");
+        item.textContent = finding;
+        findings.appendChild(item);
+      });
+      document.getElementById("presentation-details").hidden = false;
+      document.getElementById("poster-visual-title").hidden = false;
+    }
   </script>
 </body>
 </html>

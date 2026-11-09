@@ -7,7 +7,7 @@
   <style>
     :root {
       color-scheme: light;
-      --page: #f4f7fb; --paper: #fff; --ink: #202632; --line: #d7e1ee; --yonsei: #003876;
+      --page: #f4f7fb; --paper: #fff; --ink: #202632; --muted: #626d7c; --line: #d7e1ee; --yonsei: #003876;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Noto Sans KR", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
     }
     * { box-sizing: border-box; }
@@ -22,6 +22,15 @@
     .detail-header { margin-bottom: 36px; }
     .conference { margin: 0 0 14px; color: var(--yonsei); font-size: .82rem; font-weight: 760; text-transform: uppercase; }
     h2 { margin: 0; color: var(--ink); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 720; line-height: 1.45; letter-spacing: -.01em; }
+    .presentation-details { margin-bottom: 36px; padding: 28px; border: 1px solid var(--line); background: var(--paper); }
+    .details-heading, .content-heading, .slides-heading { margin: 0; color: var(--ink); font-size: 1rem; font-weight: 760; line-height: 1.45; }
+    .details-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; margin: 20px 0 0; }
+    .details-grid dt { margin: 0 0 5px; color: #8b96a4; font-size: .72rem; font-weight: 760; letter-spacing: .04em; text-transform: uppercase; }
+    .details-grid dd { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.6; }
+    .content-block { margin-top: 30px; }
+    .content-block p { margin: 10px 0 0; color: var(--muted); font-size: .92rem; line-height: 1.75; }
+    .content-block ul { display: grid; gap: 9px; margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: .92rem; line-height: 1.7; }
+    .slides-heading { margin-bottom: 14px; }
     .slide-list { display: grid; gap: 24px; }
     .slide-frame { margin: 0; padding: 12px; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 16px 42px rgba(0,56,118,.08); }
     .slide-frame img { width: 100%; height: auto; display: block; }
@@ -29,6 +38,8 @@
     @media (max-width: 560px) {
       main { padding: 42px 14px 70px; }
       .header-inner { width: min(100% - 28px, 1120px); }
+      .presentation-details { padding: 20px; }
+      .details-grid { grid-template-columns: 1fr; gap: 14px; }
       .slide-list { gap: 16px; }
       .slide-frame { padding: 6px; }
     }
@@ -48,6 +59,30 @@
         <p class="conference">KICEM 2026 Annual Conference</p>
         <h2>[KICEM 2026 Annual Conference] Development of a Cross-Trade Extension Model for an Ontology of Construction Cost Estimation and Progress Payment Documents</h2>
       </header>
+      <section class="presentation-details" aria-labelledby="oral-details-title">
+        <h3 class="details-heading" id="oral-details-title">Presentation Details</h3>
+        <dl class="details-grid">
+          <div><dt>Authors</dt><dd>Jiwon Son, Insu Jung</dd></div>
+          <div><dt>Presenter</dt><dd>Jiwon Son</dd></div>
+          <div><dt>Conference</dt><dd>Korea Institute of Construction Engineering and Management (KICEM) 2026 Annual Conference</dd></div>
+          <div><dt>Presentation Date</dt><dd>November 5, 2026</dd></div>
+          <div><dt>Location</dt><dd>The Ocean Resort, Yeosu, Republic of Korea</dd></div>
+          <div><dt>Type</dt><dd>Oral Presentation</dd></div>
+        </dl>
+        <div class="content-block">
+          <h3 class="content-heading">Overview</h3>
+          <p>This study proposes a model for extending a construction cost-estimation and progress-payment document ontology from one trade to another. Using an ontology developed for reinforced-concrete work as the source structure, the model extracts and aligns concepts from tile-work documents, identifies extension candidates, and places them within the ontology using document evidence and WBS hierarchy information.</p>
+        </div>
+        <div class="content-block">
+          <h3 class="content-heading">Key Findings</h3>
+          <ul>
+            <li>Extended the ontology from 31 to 48 classes, from 55 to 62 properties, and from 486 to 557 schema triples while preserving the common cost structure.</li>
+            <li>Added tile-specific material and installation cost concepts, including ceramic, porcelain, mosaic, and non-slip tile cost items.</li>
+            <li>HermiT and OWLAPI validation confirmed logical consistency, zero unsatisfiable classes, and zero OWL 2 profile violations.</li>
+          </ul>
+        </div>
+      </section>
+      <h3 class="slides-heading">Presentation Slides</h3>
       <section class="slide-list" id="slide-list" aria-label="Presentation slides"></section>
     </article>
   </main>
