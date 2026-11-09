@@ -74,25 +74,8 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       gap: 24px;
-    }
-
-    .brand {
-      width: 38px;
-      height: 38px;
-      display: inline-grid;
-      place-items: center;
-      overflow: hidden;
-      border: 1px solid var(--line-soft);
-      border-radius: 50%;
-      background: #fff;
-    }
-
-    .brand img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
 
     .nav {
@@ -554,9 +537,6 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="/" aria-label="Son Jiwon home">
-        <img src="/assets/images/111.jpeg" alt="Son Jiwon">
-      </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="/about/">About</a>
         <div class="nav-dropdown">
@@ -611,49 +591,6 @@
           <div class="identity-item">
             <span class="identity-logo"><img src="/assets/images/seoultech.jpg" alt="Seoul National University of Science and Technology"></span>
             <span><strong>2020~2025</strong>Seoul National University of Science and Technology<br>B.S. in Architectural Engineering</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="statement" id="research" aria-labelledby="statement-title">
-      <div class="statement-inner">
-        <p class="section-label">Current Research Tasks</p>
-        <div class="statement-copy">
-          <h2 id="statement-title">Construction progress payment documents, structured for automation and verification.</h2>
-          <p>
-            My current research focuses on semantic structuring, consistency verification, automated generation,
-            and knowledge graph-based schedule management for construction progress payment workflows.
-          </p>
-          <div class="research-tasks">
-            <div class="research-task">
-              <span>01</span>
-              <strong>Cross-Document Information Consistency Verification for Construction Progress Payment Documents</strong>
-            </div>
-            <div class="research-task">
-              <span>02</span>
-              <strong>Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Construction Progress Payment Documents</strong>
-            </div>
-            <div class="research-task">
-              <span>03</span>
-              <strong>Development of an Automated Framework for Construction Progress Payment Document Generation</strong>
-            </div>
-            <div class="research-task">
-              <span>04</span>
-              <strong>Development of a Knowledge Graph-Based Framework for Automated Construction Schedule Management</strong>
-            </div>
-            <div class="research-task">
-              <span>05</span>
-              <strong>Progress Payment Risk Management for Project Owners</strong>
-            </div>
-            <div class="research-task">
-              <span>06</span>
-              <strong>Development of a Hybrid Model for Ontology Construction of Reinforced Concrete Progress Payment Bill of Quantities</strong>
-            </div>
-            <div class="research-task">
-              <span>07</span>
-              <strong>Development of an Ontology for Reinforced Concrete Works</strong>
-            </div>
           </div>
         </div>
       </div>
