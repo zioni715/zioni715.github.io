@@ -116,8 +116,11 @@
 
     .year-panel { display: grid; gap: 18px; margin-top: 30px; }
     .year-heading { margin: 0; color: var(--soft); font-size: 0.86rem; font-weight: 760; line-height: 1.35; }
-    .poster-placeholder { margin: 0; padding: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--soft); font-size: 0.9rem; }
+    .presentation-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .presentation-card { min-height: 250px; padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; }
+    .presentation-card-placeholder { display: grid; place-items: center; color: var(--soft); font-size: 0.9rem; text-align: center; }
 
+    @media (max-width: 760px) { .presentation-grid { grid-template-columns: 1fr; } }
     @media (max-width: 560px) {
       .header-inner { width: min(100% - 28px, 1120px); }
       .nav { gap: 15px; }
@@ -143,6 +146,7 @@
           <div class="nav-dropdown-menu">
             <a href="/research/">Research Interests</a>
             <a href="/paper-publication/">Publications</a>
+            <a href="/oral-presentation/">Oral Presentations</a>
             <a href="/poster-presentation/" aria-current="page">Poster Presentations</a>
           </div>
         </div>
@@ -165,7 +169,9 @@
 
       <section class="year-panel" id="posters-2026" aria-labelledby="posters-2026-title">
         <h2 class="year-heading" id="posters-2026-title">2026</h2>
-        <p class="poster-placeholder">5 poster presentations</p>
+        <div class="presentation-grid" aria-label="2026 poster presentations">
+          <article class="presentation-card presentation-card-placeholder">5 poster previews will appear here.</article>
+        </div>
       </section>
     </div>
   </main>
