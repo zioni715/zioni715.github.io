@@ -372,6 +372,18 @@
       word-break: keep-all;
     }
 
+    .lab-link {
+      color: var(--yonsei);
+      border-bottom: 1px solid rgba(0, 56, 118, 0.28);
+      transition: border-color 160ms ease, color 160ms ease;
+    }
+
+    .lab-link:hover,
+    .lab-link:focus-visible {
+      color: var(--accent);
+      border-bottom-color: currentColor;
+    }
+
     .paper-link {
       display: inline-flex;
       align-items: center;
@@ -563,7 +575,7 @@
               <span class="period">2026 - Present</span>
               <div class="item-body">
                 <h3>M.S. Student, Civil and Environmental Engineering</h3>
-                <p>Smart Infrastructure Lab (Supervisor: Prof. Hongjo Kim), Yonsei University</p>
+                <p><a class="lab-link" href="https://hongjo.github.io/ko/" target="_blank" rel="noopener noreferrer">Smart Infrastructure Lab <span aria-hidden="true">↗</span></a> (Supervisor: Prof. Hongjo Kim), Yonsei University</p>
               </div>
             </article>
             <article class="item">
