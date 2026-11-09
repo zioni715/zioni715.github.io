@@ -154,14 +154,14 @@
     }
 
     .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown:focus-within .nav-dropdown-menu {
+    .nav-dropdown.is-open .nav-dropdown-menu {
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
     }
 
     .nav-dropdown:hover .nav-dropdown-toggle::after,
-    .nav-dropdown:focus-within .nav-dropdown-toggle::after {
+    .nav-dropdown.is-open .nav-dropdown-toggle::after {
       transform: rotate(-45deg);
     }
 
@@ -382,7 +382,7 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="/about/">About</a>
         <div class="nav-dropdown">
-          <button class="nav-dropdown-toggle" type="button" aria-haspopup="true">Research</button>
+          <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">Research</button>
           <div class="nav-dropdown-menu">
             <a href="/research/">Research Interests</a>
             <a href="/paper-publication/">Publications</a>
@@ -421,6 +421,7 @@
     </div>
   </main>
 
+  <script src="/assets/js/navigation.js"></script>
   <script src="/assets/js/blog-feed.js?v=20260729-1"></script>
 </body>
 </html>
