@@ -83,6 +83,22 @@
 
   <script>
     const posters = {
+      "ksarc-2026": {
+        conference: "KSARC 2026",
+        title: "[KSARC 2026] Ontology-Based Framework for Automated Progress and Payment Assessment",
+        image: "/assets/posters/2026/ontology-progress-payment-framework.webp",
+        details: {
+          authors: "Jiwon Son, Insu Jung, Changjun Lee (Corresponding author)",
+          event: "Korean Society for Automation and Robotics in Construction (KSARC) 2026 Conference",
+          type: "Poster Presentation",
+          overview: "Construction progress and payment information is distributed across heterogeneous field documents and repeatedly reviewed through manual processes. This study proposes an ontology-based framework that integrates progress and payment information into a unified semantic structure and automatically generates assessment and consistency-checking results from standardized rules.",
+          findings: [
+            "Integrates work categories, contract line items, payment rounds, quantity records, evidence documents, and planned and actual activities within a unified ontology.",
+            "Defines rule-based calculations for progress payments and construction progress using consistent quantities, units, reference dates, verification statuses, and source documents.",
+            "Supports traceable assessment and identifies candidates for advance billing, uninspected work, and unclaimed quantities while preserving links to original evidence documents."
+          ]
+        }
+      },
       "cde-2026": {
         conference: "CDE 2026",
         title: "[CDE 2026] Comparative Evaluation of RDF-Based Ontology Representation Methods for Semantic Structuring of Progress Payment Documents in Reinforced Concrete Work",
@@ -143,7 +159,7 @@
         ["Type", poster.details.type]
       ];
       const detailsGrid = document.getElementById("details-grid");
-      detailItems.forEach(([label, value]) => {
+      detailItems.filter(([, value]) => value).forEach(([label, value]) => {
         const wrapper = document.createElement("div");
         const term = document.createElement("dt");
         const description = document.createElement("dd");
